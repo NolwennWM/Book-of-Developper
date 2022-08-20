@@ -1,0 +1,25 @@
+// :host est le body du composant, il a besoin du display.
+:host{
+    display: block;
+    background-color: rgb(138, 221, 138);
+}
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+div{
+    background-color: yellow;
+}
+span{
+    font-size: 5rem;
+}
+.justePrix{
+    background-color: red;
+    &,
+    .card .front,
+    .gameZone {
+        @include flexColumn();
+    }
+}
