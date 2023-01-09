@@ -1,25 +1,21 @@
-// :host est le body du composant, il a besoin du display.
+@import "/src/app/mixin";
+
 :host{
-    display: block;
-    background-color: rgb(138, 221, 138);
+    @include page();
 }
-@mixin flexColumn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+nav
+{
+    padding-left: 20px
 }
-div{
-    background-color: yellow;
-}
-span{
-    font-size: 5rem;
+.zone
+{
+    @include flex(center);
 }
 .justePrix{
     background-color: red;
     &,
     .card .front,
     .gameZone {
-        @include flexColumn();
+        @include flex(space-around center column);
     }
 }

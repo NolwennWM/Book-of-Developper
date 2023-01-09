@@ -1,0 +1,49 @@
+@mixin page($reverse:false)
+{
+    background-image: url(/assets/textures/natural-paper.png);
+    background-color: #e0c9a6;
+    height: 97%;
+    width: 98%;
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    padding: 5px;
+    @if($reverse)
+    {
+        box-shadow: inset -7px 0 9px -7px rgba(0, 0, 0, 0.4);
+    }
+    @else
+    {
+        box-shadow: inset 7px 0 9px -7px rgba(0, 0, 0, 0.4);
+    }
+    
+}
+@mixin flex ($justify: false, $align: false, $direction: false, $wrap: false)
+{
+    display: flex;
+    @if($justify)
+    {
+        justify-content: $justify;
+    }
+    @if($align)
+    {
+        align-items: $align;
+    }
+    @if($direction)
+    {
+        flex-direction: $direction;
+    }
+    @if($wrap)
+    {
+        flex-wrap: $wrap;
+    }
+}
+@mixin media($min)
+{
+    @media screen and (min-width: map-get($breakpoints, $min)) {
+        &
+        {
+            @content;
+        }
+    }
+}
