@@ -1,26 +1,37 @@
 @import "/src/app/mixin";
-
-$coverColor : #49322b;
+/* bleu 00008B  marron clair 49322b marron foncé 2c1306*/
+$coverColor : #2c1306;
 $coverImage : url(/assets/textures/leather.png);
 
 .body
 {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 50px;
+    @include media("desktop")
+    {
+        padding-top: 0;
+        @include flex(center, center);
+    }
     main
     {
         position: relative;
         background-image: $coverImage;
         background-color: $coverColor;
         aspect-ratio: 1/1.4142;
-        height: 95%;
+        max-width: 100%;
+        min-width: 90%;
+        @include media("desktop")
+        {
+            min-width: 25%;
+            height: 95%;
+        }
+        
         border-radius: 0 3px 3px 0;
+        box-shadow: 5px 5px 9px 3px rgba(0, 0, 0, 0.4);
         .cover
         {
             position: absolute;
-            transition: rotate .5s;
+            transition: rotate .7s;
             transform-style: preserve-3d;
             width: 100%;
             height: 100%;
@@ -29,39 +40,92 @@ $coverImage : url(/assets/textures/leather.png);
             background-image: $coverImage;
             background-color: $coverColor;
             z-index: 5;
+            cursor: pointer;
             .front
             {
+                box-shadow: inset 7px 0 9px -7px rgba(0, 0, 0, 0.4);
                 background-image: $coverImage;
                 background-color: $coverColor;
+                transform-style: preserve-3d;
+                border-radius: 0 3px 3px 0;
                 width: 100%;
                 height: 100%;
                 position: absolute;
                 backface-visibility: hidden;
+                padding: 48px 0;
+                @include flex(space-between, center, column);
                 // z-index: 1;
+                h1, h2
+                {
+                    text-align: center;
+                    background-color: lighten($coverColor, 50%);
+                    color: transparent;
+                    // text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+                    text-shadow: -1px -1px 3px rgba(0,0,0,.5);
+                    background-clip: text;
+                    
+                }
+                h1
+                {
+                    font-size: 40px;
+                    position: relative;
+                    &::after
+                    {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        left: 20%;
+                        right: 20%;
+                        bottom: -10px;
+                        border-bottom: 3px solid lighten($coverColor, 35%);
+                        box-shadow: -1px -1px 2px rgba(0,0,0,.5);
+                    }
+                }
             }
             .back
             {
+                @include page($reverse: true);
                 // z-index: 0;
                 rotate: y -180deg;
+                transform-origin: center;
                 backface-visibility: hidden;
-                @include page($reverse:true);
             }
         }
         nav
         {
-            margin: -10px;
             position: absolute;
-            top: 50px;
-            left: 100%;
-            display: flex;
-            flex-direction: column;
+            @include flex(flex-start, flex-end);
             gap: 5px;
+            bottom: 100%;
+            left: 20px;
+            margin: -10px;
+            @include media("desktop")
+            {
+                bottom: unset;
+                top: 50px;
+                left: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+            }
             a
             {
                 background-color: beige;
                 box-shadow: 0 2px 3px 1px rgb(85, 85, 77);
-                padding: 5px 15px;
                 color: #6b6b6b;
+                padding: 5px 15px 15px 15px;
+                @include media("desktop")
+                {
+                    padding: 5px 15px;
+                }
+                &.active
+                {
+                    padding-bottom: 30px;
+                    @include media("desktop")
+                    {
+                        padding-bottom: 5px;
+                        padding-left: 30px;
+                    }
+                }
             }
         }
     }

@@ -1,60 +1,39 @@
-import { animate, animateChild, group, query, style, transition, trigger } from "@angular/animations";
+import { animate, query, style, transition, trigger } from "@angular/animations";
 
+const nextPage = [
+    style({ position: 'relative' }),
+    query(':leave', 
+    [
+        style(
+            {
+            zIndex: '5',
+            transform: 'rotateY(0)',
+        })
+    ]),
+    query(':leave', [
+    animate('700ms ease-out', style({ transform: 'rotateY(180deg)' }))
+    ]),
+];
+const previousPage = [
+    style({ position: 'relative' }),
+    query(':enter', 
+    [
+        style(
+            {
+            zIndex: '5',
+            transform: 'rotateY(180deg)',
+        })
+    ]),
+    query(':enter', [
+    animate('700ms ease-out', style({ transform: 'rotateY(0deg)' }))
+    ]),
+    query(':leave', [
+    animate('700ms ease-out', style({ transform: 'rotateY(0deg)' }))
+    ]),
+];
 export const slideInAnimation =
     trigger('routeAnimations', [
-        transition('GamePage <=> NotFoundPage', 
-        [
-            style({ position: 'relative' }),
-            query(':enter, :leave', 
-            [
-                style(
-                    {
-                    // position: 'absolute',
-                    // top: 0,
-                    // left: 0,
-                    // width: '100%'
-                    transformOrigin: "left",
-                    transformStyle: "preserve-3d",
-                    zIndex: '10'
-                })
-            ]),
-            query(':enter', 
-            [
-                style({ transform: 'rotateY(0)' })
-            ]),
-            query(':leave', animateChild()),
-            group(
-            [
-                query(':leave', [
-                animate('500ms ease-out', style({ transform: 'rotateY(180deg)' }))
-                ]),
-                query(':enter', [
-                animate('500ms ease-out', style({ zIndex: '0' }))
-                ]),
-            ]),
-        ]),
-        // transition('* <=> *', [
-        //   style({ position: 'relative' }),
-        //   query(':enter, :leave', [
-        //     style({
-        //       position: 'absolute',
-        //       top: 0,
-        //       left: 0,
-        //       width: '100%'
-        //     })
-        //   ]),
-        //   query(':enter', [
-        //     style({ left: '-100%' })
-        //   ]),
-        //   query(':leave', animateChild()),
-        //   group([
-        //     query(':leave', [
-        //       animate('200ms ease-out', style({ left: '100%', opacity: 0 }))
-        //     ]),
-        //     query(':enter', [
-        //       animate('300ms ease-out', style({ left: '0%' }))
-        //     ]),
-        //     query('@*', animateChild())
-        //   ]),
-        // ])
+        transition('GamePage => NotFoundPage', nextPage),
+        transition('NotFoundPage => GamePage', previousPage),
+        transition('* <=> *', nextPage)
     ]);

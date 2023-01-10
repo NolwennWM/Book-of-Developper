@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { ChildrenOutletContexts } from '@angular/router';
+import { Component } from '@angular/core';
+import { ChildrenOutletContexts, Router } from '@angular/router';
 import { slideInAnimation } from './animations';
 
 @Component({
@@ -11,10 +11,14 @@ import { slideInAnimation } from './animations';
   ]
 })
 export class AppComponent {
-  // @Input() cover?: HTMLDivElement;
   title = 'webmar';
-  constructor(private contexts: ChildrenOutletContexts) {}
-  getRouteAnimationData(cover: HTMLDivElement) 
+
+  constructor(
+    private contexts: ChildrenOutletContexts,
+    private router: Router
+    ) {}
+
+  getRouteAnimationData() 
   {
     return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
   }
@@ -24,8 +28,11 @@ export class AppComponent {
     
     if(!cover)return;
     if(cover.style.rotate && !open)
+    {
       cover.style.rotate = "";
+      this.router.navigate(["/"]);
+    }
     else
-      cover.style.rotate = "y -180deg";    
+      cover.style.rotate = "y -180deg"; 
   }
 }

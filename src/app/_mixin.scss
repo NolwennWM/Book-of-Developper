@@ -1,3 +1,7 @@
+$breakpoints : (
+    "tablet": 500px,
+    "desktop": 900px
+);
 @mixin page($reverse:false)
 {
     background-image: url(/assets/textures/natural-paper.png);
@@ -8,6 +12,15 @@
     top: 50%;
     translate: 0 -50%;
     padding: 5px;
+    perspective: 1500px;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    perspective-origin: top;
+    &>*
+    {
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+    }
     @if($reverse)
     {
         box-shadow: inset -7px 0 9px -7px rgba(0, 0, 0, 0.4);

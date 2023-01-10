@@ -1,12 +1,15 @@
 <div class="body">
-    <main [@routeAnimations]="getRouteAnimationData(cover)">
+    <main [@routeAnimations]="getRouteAnimationData()">
         <div class="cover" #cover (click)="toggleBook(cover)">
-            <div class="back">testback</div>
-            <div class="front">testface</div>
+            <div class="back"><!-- testback--></div>
+            <div class="front">
+                <h1>Les Contes <br> d'un Développeur</h1>
+                <h2>Nolwenn WEBER-MARQUISET</h2>
+            </div>
         </div>
         <nav (click)="toggleBook(cover, true)">
-            <a routerLink="/truc">404</a> <br>
-            <a routerLink="/jeux/selection">Jeux</a> 
+            <a routerLink="/truc" routerLinkActive="active">404</a> <br>
+            <a routerLink="/jeux/selection" routerLinkActive="active">Jeux</a> 
         </nav>
         <router-outlet></router-outlet>
     </main>
