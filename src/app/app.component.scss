@@ -41,6 +41,7 @@ $coverImage : url(/assets/textures/leather.png);
             background-color: $coverColor;
             z-index: 5;
             cursor: pointer;
+            box-shadow: 5px 5px 9px 3px rgba(0, 0, 0, 0.4);
             .front
             {
                 box-shadow: inset 7px 0 9px -7px rgba(0, 0, 0, 0.4);
@@ -120,6 +121,7 @@ $coverImage : url(/assets/textures/leather.png);
                 &.active
                 {
                     padding-bottom: 30px;
+                    // z-index: 10;
                     @include media("desktop")
                     {
                         padding-bottom: 5px;

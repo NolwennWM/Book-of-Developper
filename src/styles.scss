@@ -4,3 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body
+{
+    background-color: antiquewhite;
+}
+@media (prefers-color-scheme: dark) 
+{
+    body
+    {
+        background-color: darkslategray;
+    }
+}

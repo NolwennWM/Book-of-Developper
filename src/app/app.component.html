@@ -8,8 +8,12 @@
             </div>
         </div>
         <nav (click)="toggleBook(cover, true)">
-            <a routerLink="/truc" routerLinkActive="active">404</a> <br>
+            <a routerLink="/home" routerLinkActive="active">Accueil</a>
             <a routerLink="/jeux/selection" routerLinkActive="active">Jeux</a> 
+            <a routerLink="/truc" routerLinkActive="active">404</a>
+            <!-- TODO régler une taille fixe pour chaque lien -->
+            <!-- <a routerLink="/jeux/selection" routerLinkActive="active">test</a>  -->
+            <!-- <a routerLink="/jeux/selection" routerLinkActive="active">chaussette</a>  -->
         </nav>
         <router-outlet></router-outlet>
     </main>
