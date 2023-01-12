@@ -95,40 +95,61 @@ $coverImage : url(/assets/textures/leather.png);
         nav
         {
             position: absolute;
-            @include flex(flex-start, flex-end);
-            gap: 5px;
+            @include flex(space-between, flex-end);
+            // gap: 5px;
             bottom: 100%;
-            left: 20px;
+            // left: 20px;
+            padding: 0 20px;
             margin: -10px;
+            width: 100%;
             @include media("desktop")
             {
                 bottom: unset;
-                top: 50px;
+                width: fit-content;
+                // top: 50px;
+                padding: 50px 0;
                 left: 100%;
                 flex-direction: column;
                 align-items: flex-start;
+                height: 100%;
             }
-            a
+            div
             {
-                background-color: beige;
-                box-shadow: 0 2px 3px 1px rgb(85, 85, 77);
-                color: #6b6b6b;
-                padding: 5px 15px 15px 15px;
+                @include flex(flex-start, flex-end);
+                gap: 5px;
                 @include media("desktop")
                 {
-                    padding: 5px 15px;
+                    flex-direction: column;
+                    align-items: flex-start;
                 }
-                &.active
+
+                a, span
                 {
-                    padding-bottom: 30px;
-                    // z-index: 10;
+                    // TODO : changer les langues en popup bibliothèque
+                    // writing-mode: vertical-rl;
+                    // text-orientation: upright;
+                    background-color: beige;
+                    box-shadow: 0 2px 3px 1px rgb(85, 85, 77);
+                    color: #6b6b6b;
+                    padding: 5px 15px 15px 15px;
+                    cursor: pointer;
                     @include media("desktop")
                     {
-                        padding-bottom: 5px;
-                        padding-left: 30px;
+                        padding: 5px 15px;
+                    }
+                    &.active
+                    {
+                        padding-bottom: 30px;
+                        // z-index: 10;
+                        @include media("desktop")
+                        {
+                            padding-bottom: 5px;
+                            padding-left: 30px;
+                        }
                     }
                 }
             }
+            
         }
     }
 }

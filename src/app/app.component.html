@@ -1,19 +1,24 @@
 <div class="body">
     <main [@routeAnimations]="getRouteAnimationData()">
         <div class="cover" #cover (click)="toggleBook(cover)">
-            <div class="back"><!-- testback--></div>
+            <div class="back"><!-- testback-->{{"test.truc" | translate}}</div>
             <div class="front">
-                <h1>Les Contes <br> d'un Développeur</h1>
+                <h1 [innerHTML]="'app.title' | translate"></h1>
                 <h2>Nolwenn WEBER-MARQUISET</h2>
             </div>
         </div>
-        <nav (click)="toggleBook(cover, true)">
-            <a routerLink="/home" routerLinkActive="active">Accueil</a>
-            <a routerLink="/jeux/selection" routerLinkActive="active">Jeux</a> 
-            <a routerLink="/truc" routerLinkActive="active">404</a>
+        <nav>
+            <div class="navigation" (click)="toggleBook(cover, true)">
+                <a routerLink="/home" routerLinkActive="active">{{"app.nav.homelink" | translate}}</a>
+                <a routerLink="/jeux/selection" routerLinkActive="active">{{"app.nav.gamelink" | translate}}</a> 
+                <a routerLink="/truc" routerLinkActive="active">404</a>
+            </div>
+            <div class="language">
+                <span data-lang="fr-FR" (click)="changeLanguage($event)">Français</span>
+                <span data-lang="en-EN" (click)="changeLanguage($event)">English</span>
+                <span data-lang="jp-JP" (click)="changeLanguage($event)">日本語</span>
+            </div>
             <!-- TODO régler une taille fixe pour chaque lien -->
-            <!-- <a routerLink="/jeux/selection" routerLinkActive="active">test</a>  -->
-            <!-- <a routerLink="/jeux/selection" routerLinkActive="active">chaussette</a>  -->
         </nav>
         <router-outlet></router-outlet>
     </main>

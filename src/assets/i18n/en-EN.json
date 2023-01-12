@@ -1,0 +1,15 @@
+{
+    "app":
+    {
+        "title": "A Developer's <br> Tales",
+        "nav":
+        {
+            "homelink": "Home",
+            "gamelink": "Game"
+        }
+    },
+    "not-found":
+    {
+        "message": "Time has washed away this page... 404."
+    }
+}

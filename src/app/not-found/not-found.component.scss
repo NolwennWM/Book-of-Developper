@@ -2,4 +2,10 @@
 // :host est le body du composant.
 :host{
     @include page();
+    font-size: 1.5rem;
+}
+p
+{
+    text-align: center;
+    padding: 20px;
 }

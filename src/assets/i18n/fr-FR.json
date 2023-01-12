@@ -1,0 +1,15 @@
+{
+    "app":
+    {
+        "title": "Les Contes <br> d'un Développeur",
+        "nav":
+        {
+            "homelink": "Accueil",
+            "gamelink": "Jeux"
+        }
+    },
+    "not-found":
+    {
+        "message": "Le temps à emporté cette page... 404."
+    }
+}
