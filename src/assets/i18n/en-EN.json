@@ -8,6 +8,11 @@
             "gamelink": "Game"
         }
     },
+    "homepage":
+    {
+        "title": "Chapter 1 : Introduction",
+        "p1": "Il était une fois un développeur à la recherche de nouvelles créations à faire naître de ses mains.<br>Peu lui importait la difficulté de ce qu'il devait programmer, il prenaît grand plaisir à pourfendre les bugs.<br>Sous ses doigts agiles prenaient forme toute sorte d'application web. "
+    },
     "not-found":
     {
         "message": "Time has washed away this page... 404."

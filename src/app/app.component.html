@@ -1,7 +1,7 @@
 <div class="body">
-    <main [@routeAnimations]="getRouteAnimationData()">
+    <main [@routeAnimations]="getRouteAnimationData()" [@changeBook]="book"  (@changeBook.done)="changeBook($event)">
         <div class="cover" #cover (click)="toggleBook(cover)">
-            <div class="back"><!-- testback-->{{"test.truc" | translate}}</div>
+            <div class="back"><!-- testback--></div>
             <div class="front">
                 <h1 [innerHTML]="'app.title' | translate"></h1>
                 <h2>Nolwenn WEBER-MARQUISET</h2>

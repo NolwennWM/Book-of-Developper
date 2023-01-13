@@ -1,21 +1,23 @@
-import { trigger } from '@angular/animations';
+import { AnimationEvent } from '@angular/animations';
 import { Component } from '@angular/core';
 import { ChildrenOutletContexts } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { pageAnimation } from './animations';
+import { languageAnimation, pageAnimation } from './animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
-    pageAnimation
+    pageAnimation,
+    languageAnimation
   ]
 })
 export class AppComponent {
   close:boolean = true;
   languages: string[]= ["fr-FR", "en-EN", "jp-JP"];
   language: string = "fr-FR";
+  book: string = "idle";
 
   constructor(
     private contexts: ChildrenOutletContexts,
@@ -57,13 +59,12 @@ export class AppComponent {
   }
   changeLanguage($event: Event)
   {
-    console.log("start animation here");
-    
     const newLang = ($event.target as HTMLSpanElement).dataset["lang"];
     if(!this.isPossibleLanguage(newLang))return;
     localStorage.setItem("lang", newLang);
-    this.translate.use(newLang)
-        .subscribe(()=>console.log("end animation here"));    
+    this.book = "remove";
+    // this.translate.use(newLang)
+    //     .subscribe(()=>/* this.book = "idle" */"");    
   }
   isPossibleLanguage(lang?: string|null): lang is string
   {
@@ -71,5 +72,11 @@ export class AppComponent {
     if(!lang)return false;
     this.language = lang;
     return true;
+  }
+  changeBook($event: AnimationEvent)
+  {
+    if($event.phaseName === "done")
+      this.translate.use(this.language)
+        .subscribe(()=> this.book = "idle"); 
   }
 }

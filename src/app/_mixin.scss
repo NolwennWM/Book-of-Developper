@@ -16,6 +16,7 @@ $breakpoints : (
     transform-origin: left;
     transform-style: preserve-3d;
     perspective-origin: top;
+    padding: 10px;
     &>*
     {
         backface-visibility: hidden;

@@ -1,12 +1,17 @@
 {
     "app":
     {
-        "title": "<ruby>開発者<rp>(</rp><rt>かいはつしゃ</rt><rp>)</rp></ruby>の<ruby>物語<rp>(</rp><rt>ものがたり</rt><rp>)</rp></ruby>",
+        "title": "プログラマの<ruby>物語<rp>(</rp><rt>ものがたり</rt><rp>)</rp></ruby>",
         "nav":
         {
             "homelink": "ホーム",
             "gamelink": "ゲーム"
         }
+    },
+    "homepage":
+    {
+        "title": "章句 1 : 前付け",
+        "p1": "Il était une fois un développeur à la recherche de nouvelles créations à faire naître de ses mains.<br>Peu lui importait la difficulté de ce qu'il devait programmer, il prenaît grand plaisir à pourfendre les bugs.<br>Sous ses doigts agiles prenaient forme toute sorte d'application web. "
     },
     "not-found":
     {
