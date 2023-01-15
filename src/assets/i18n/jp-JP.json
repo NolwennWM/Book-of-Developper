@@ -1,7 +1,7 @@
 {
     "app":
     {
-        "title": "プログラマの<ruby>物語<rp>(</rp><rt>ものがたり</rt><rp>)</rp></ruby>",
+        "title": "プログラマーの<ruby>物語<rp>(</rp><rt>ものがたり</rt><rp>)</rp></ruby>",
         "nav":
         {
             "homelink": "ホーム",
@@ -10,11 +10,11 @@
     },
     "homepage":
     {
-        "title": "章句 1 : 前付け",
+        "title": "<ruby>章句<rp>(</rp><rt>しょうく</rt><rp>)</rp></ruby> 1 : <ruby>前付<rp>(</rp><rt>まえづ</rt><rp>)</rp></ruby>け",
         "p1": "Il était une fois un développeur à la recherche de nouvelles créations à faire naître de ses mains.<br>Peu lui importait la difficulté de ce qu'il devait programmer, il prenaît grand plaisir à pourfendre les bugs.<br>Sous ses doigts agiles prenaient forme toute sorte d'application web. "
     },
     "not-found":
     {
-        "message": "<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>はそのページを<ruby>吹<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>き<ruby>飛<rp>(</rp><rt>と</rt><rp>)</rp></ruby>ばした... 404."
+        "message": "<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>はそのページを<ruby>吹<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>き<ruby>飛<rp>(</rp><rt>と</rt><rp>)</rp></ruby>ばした… <span class='vertical'>404</span>"
     }
 }

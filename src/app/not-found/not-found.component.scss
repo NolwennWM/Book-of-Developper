@@ -1,4 +1,4 @@
-@import "/src/app/mixin";
+@import "/src/app/assets/scss/mixin";
 // :host est le body du composant.
 :host{
     @include page();

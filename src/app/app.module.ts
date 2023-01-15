@@ -11,6 +11,7 @@ import { GamesModule } from './games/games.module';
 import { MainModule } from './main/main.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SecretModule } from './secret/secret.module';
+import { LanguageModalComponent } from './language-modal/language-modal.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "/assets/i18n/", ".json");
@@ -19,7 +20,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LanguageModalComponent
   ],
   imports: [
     BrowserModule,

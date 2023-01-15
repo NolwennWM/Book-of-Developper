@@ -61,3 +61,12 @@ $breakpoints : (
         }
     }
 }
+@mixin language($name, $cover, $text, $decor)
+{
+    .#{$name}
+    {
+        --cover: #{$cover} !important;
+        --cover-text: #{$text} !important;
+        --cover-decor: #{$decor} !important;
+    }
+}

@@ -1,8 +1,6 @@
-@import "/src/app/mixin";
-/* bleu 00008B  marron clair 49322b marron foncé 2c1306*/
-$coverColor : #2c1306;
-$coverImage : url(/assets/textures/leather.png);
+@import "/src/app/assets/scss/mixin", "/src/app/assets/scss/languages";
 
+$coverImage : url(/assets/textures/leather.png);
 .body
 {
     height: 100vh;
@@ -16,7 +14,7 @@ $coverImage : url(/assets/textures/leather.png);
     {
         position: relative;
         background-image: $coverImage;
-        background-color: $coverColor;
+        background-color: var(--cover);
         aspect-ratio: 1/1.4142;
         max-width: 100%;
         min-width: 90%;
@@ -38,7 +36,7 @@ $coverImage : url(/assets/textures/leather.png);
             transform-origin: left center;
             border-radius: inherit;
             background-image: $coverImage;
-            background-color: $coverColor;
+            background-color: var(--cover);
             z-index: 10;
             cursor: pointer;
             box-shadow: 5px 5px 9px 3px rgba(0, 0, 0, 0.4);
@@ -46,7 +44,7 @@ $coverImage : url(/assets/textures/leather.png);
             {
                 box-shadow: inset 7px 0 9px -7px rgba(0, 0, 0, 0.4);
                 background-image: $coverImage;
-                background-color: $coverColor;
+                background-color: var(--cover);
                 transform-style: preserve-3d;
                 border-radius: 0 3px 3px 0;
                 width: 100%;
@@ -59,7 +57,7 @@ $coverImage : url(/assets/textures/leather.png);
                 h1, h2
                 {
                     text-align: center;
-                    background-color: lighten($coverColor, 50%);
+                    background-color: var(--cover-text);
                     color: transparent;
                     // text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
                     text-shadow: -1px -1px 3px rgba(0,0,0,.5);
@@ -78,7 +76,7 @@ $coverImage : url(/assets/textures/leather.png);
                         left: 20%;
                         right: 20%;
                         bottom: -10px;
-                        border-bottom: 3px solid lighten($coverColor, 35%);
+                        border-bottom: 3px solid var(--cover-decor);
                         box-shadow: -1px -1px 2px rgba(0,0,0,.5);
                     }
                 }

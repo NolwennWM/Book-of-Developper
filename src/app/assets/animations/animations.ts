@@ -6,7 +6,7 @@ const nextPage = [
     [
         style(
             {
-            zIndex: '5',
+            zIndex: '11',
             transform: 'rotateY(0)',
         })
     ], { optional: true }),
@@ -20,7 +20,7 @@ const previousPage = [
     [
         style(
             {
-            zIndex: '5',
+            zIndex: '11',
             transform: 'rotateY(180deg)',
         })
     ], { optional: true }),

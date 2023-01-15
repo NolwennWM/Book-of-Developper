@@ -1,8 +1,10 @@
 import { AnimationEvent } from '@angular/animations';
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { ChildrenOutletContexts } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { languageAnimation, pageAnimation } from './animations';
+import { languageAnimation, pageAnimation } from './assets/animations/animations';
+import { LanguageModalComponent } from './language-modal/language-modal.component';
+import { LanguageService } from './language.service';
 
 @Component({
   selector: 'app-root',
@@ -13,19 +15,20 @@ import { languageAnimation, pageAnimation } from './animations';
     languageAnimation
   ]
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
+  @ViewChild("body") body?: ElementRef;
   close:boolean = true;
-  languages: string[]= ["fr-FR", "en-EN", "jp-JP"];
-  language: string = "fr-FR";
   book: string = "idle";
 
   constructor(
     private contexts: ChildrenOutletContexts,
-    private translate: TranslateService
-    ) {
-      this.defaultLanguage();
-    }
-
+    private translate: TranslateService,
+    private lService: LanguageService
+    ) {}
+  ngAfterViewInit()
+  {
+    this.body?.nativeElement.classList.add(this.lService.language);
+  }
   getRouteAnimationData() 
   {
     if(this.close) return;
@@ -45,38 +48,20 @@ export class AppComponent {
       this.close = false;
     }
   }
-  defaultLanguage()
+  setBook(action: string)
   {
-    const oldLanguage = localStorage.getItem("lang");
+    console.log(action);
     
-    if(!this.isPossibleLanguage(oldLanguage))
-    {
-      const navLanguage = navigator.language;
-      this.isPossibleLanguage(navLanguage)
-    }
-      
-    this.translate.setDefaultLang(this.language);
-  }
-  changeLanguage($event: Event)
-  {
-    const newLang = ($event.target as HTMLSpanElement).dataset["lang"];
-    if(!this.isPossibleLanguage(newLang))return;
-    localStorage.setItem("lang", newLang);
-    this.book = "remove";
-    // this.translate.use(newLang)
-    //     .subscribe(()=>/* this.book = "idle" */"");    
-  }
-  isPossibleLanguage(lang?: string|null): lang is string
-  {
-    lang = this.languages.find(l=>l.includes(lang??""));
-    if(!lang)return false;
-    this.language = lang;
-    return true;
+    this.book = action
   }
   changeBook($event: AnimationEvent)
   {
-    if($event.phaseName === "done")
-      this.translate.use(this.language)
-        .subscribe(()=> this.book = "idle"); 
+    if($event.phaseName === "done" && this.book === "remove")
+    {
+      this.body?.nativeElement.classList.remove(this.translate.currentLang);
+      this.body?.nativeElement.classList.add(this.lService.language);
+      
+      this.translate.use(this.lService.language).subscribe(()=>this.book = "idle"); 
+    }
   }
 }

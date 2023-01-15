@@ -1,4 +1,4 @@
-<div class="body">
+<div class="body" #body>
     <main [@routeAnimations]="getRouteAnimationData()" [@changeBook]="book"  (@changeBook.done)="changeBook($event)">
         <div class="cover" #cover (click)="toggleBook(cover)">
             <div class="back"><!-- testback--></div>
@@ -14,9 +14,7 @@
                 <a routerLink="/truc" routerLinkActive="active">404</a>
             </div>
             <div class="language">
-                <span data-lang="fr-FR" (click)="changeLanguage($event)">Français</span>
-                <span data-lang="en-EN" (click)="changeLanguage($event)">English</span>
-                <span data-lang="jp-JP" (click)="changeLanguage($event)">日本語</span>
+                <app-language-modal (bookEvent)="setBook($event)"></app-language-modal>
             </div>
             <!-- TODO régler une taille fixe pour chaque lien -->
         </nav>

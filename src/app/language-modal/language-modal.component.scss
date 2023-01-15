@@ -1,0 +1,47 @@
+@import "/src/app/assets/scss/mixin", "/src/app/assets/scss/languages";
+
+$coverImage : url(/assets/textures/leather.png);
+$shelf: #A87328;
+
+.tmp{
+    height: 2rem;
+}
+.bookshelf
+{
+    border: 10px solid $shelf;
+    background-color: darken($shelf, 35%);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 240px;
+    gap: 1px;
+    .book
+    {
+        cursor: pointer;
+        width: 2em;
+        padding: 10px 0;
+        height: 200px;
+        background-color: var(--cover);
+        color: var(--cover-text);
+        background-image: $coverImage;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform .3s linear;
+        svg
+        {
+            width: 100%;
+            aspect-ratio: 3/2;
+        }
+        h2
+        {
+            text-align: center;
+            writing-mode: vertical-rl;
+            flex-grow: 1;
+        }
+        &:hover
+        {
+            transform: scale(1.2);
+        }
+    }
+}
