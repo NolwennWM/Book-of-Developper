@@ -1,4 +1,5 @@
 <div class="body" #body>
+    <app-language-modal (bookEvent)="setBook($event)"></app-language-modal>
     <main [@routeAnimations]="getRouteAnimationData()" [@changeBook]="book"  (@changeBook.done)="changeBook($event)">
         <div class="cover" #cover (click)="toggleBook(cover)">
             <div class="back"><!-- testback--></div>
@@ -12,9 +13,6 @@
                 <a routerLink="/home" routerLinkActive="active">{{"app.nav.homelink" | translate}}</a>
                 <a routerLink="/jeux/selection" routerLinkActive="active">{{"app.nav.gamelink" | translate}}</a> 
                 <a routerLink="/truc" routerLinkActive="active">404</a>
-            </div>
-            <div class="language">
-                <app-language-modal (bookEvent)="setBook($event)"></app-language-modal>
             </div>
             <!-- TODO régler une taille fixe pour chaque lien -->
         </nav>

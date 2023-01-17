@@ -1,7 +1,10 @@
-<svg class="tmp" (click)="bookshelf=!bookshelf">
-    <use href="#lang-icons"></use>
-</svg>
-<div class="bookshelf" *ngIf="bookshelf">
+<button class="language-btn" (click)="showShelf()">
+    <svg>
+        <use href="#lang-icons"></use>
+    </svg>
+</button>
+<!-- *ngIf="bookshelf" -->
+<div class="bookshelf">
     <div class="book fr-FR" (click)="selectLanguage('fr-FR')">
         <svg><use href="#flag-icons-fr"></use></svg>
         <h2>Français</h2>

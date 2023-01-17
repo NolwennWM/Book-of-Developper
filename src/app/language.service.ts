@@ -27,7 +27,7 @@ export class LanguageService {
   {
     if(!this.isPossibleLanguage(newLang))return "idle";
     localStorage.setItem("lang", newLang);
-    return "remove";   
+    return "return";   
   }
   isPossibleLanguage(lang?: string|null): lang is string
   {

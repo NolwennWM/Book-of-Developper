@@ -43,13 +43,13 @@ export const pageAnimation =
     ]);
 export const languageAnimation = 
     trigger("changeBook", [
-        state("remove", style({
+        state("remove, return", style({
             top:"-150%"
         })),
         state("idle", style({
             top:"0"
         })),
-        transition("remove => idle", [
+        transition("return => idle", [
             animate("1.5s ease-out")
         ]),
         transition("idle => remove", [

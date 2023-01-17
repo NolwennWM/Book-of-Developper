@@ -3,7 +3,6 @@ import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { ChildrenOutletContexts } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { languageAnimation, pageAnimation } from './assets/animations/animations';
-import { LanguageModalComponent } from './language-modal/language-modal.component';
 import { LanguageService } from './language.service';
 
 @Component({
@@ -16,6 +15,7 @@ import { LanguageService } from './language.service';
   ]
 })
 export class AppComponent implements AfterViewInit {
+  // Le clique sur un svg avec firefox provoque une erreur.
   @ViewChild("body") body?: ElementRef;
   close:boolean = true;
   book: string = "idle";
@@ -56,7 +56,7 @@ export class AppComponent implements AfterViewInit {
   }
   changeBook($event: AnimationEvent)
   {
-    if($event.phaseName === "done" && this.book === "remove")
+    if($event.phaseName === "done" && this.book === "return")
     {
       this.body?.nativeElement.classList.remove(this.translate.currentLang);
       this.body?.nativeElement.classList.add(this.lService.language);

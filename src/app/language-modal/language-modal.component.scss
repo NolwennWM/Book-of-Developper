@@ -2,12 +2,30 @@
 
 $coverImage : url(/assets/textures/leather.png);
 $shelf: #A87328;
-
-.tmp{
-    height: 2rem;
+:host
+{
+    position: absolute;
+}
+.language-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: fit-content;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    svg
+    {
+        width: 3rem;
+        height: 2rem;
+    }
 }
 .bookshelf
 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
     border: 10px solid $shelf;
     background-color: darken($shelf, 35%);
     display: flex;

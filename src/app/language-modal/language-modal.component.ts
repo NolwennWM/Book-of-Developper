@@ -19,4 +19,12 @@ export class LanguageModalComponent {
     this.bookEvent.emit(book);
     this.bookshelf = false;
   }
+  showShelf()
+  {
+    this.bookshelf = !this.bookshelf;
+    if(this.bookshelf)
+      this.bookEvent.emit("remove");
+    else
+      this.bookEvent.emit("return");
+  }
 }
