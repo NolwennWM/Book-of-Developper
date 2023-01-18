@@ -11,15 +11,20 @@ export class LanguageModalComponent {
   bookshelf = false;
 
   constructor(private lService: LanguageService){}
-
-  selectLanguage(lang : string)
+  /**
+   * Change la langue et émet un évènement indiquant un nouvel état du livre.
+   * @param lang langue selectionné
+   */
+  selectLanguage(lang : string): void
   {
-    // TODO: ranger le livre quand on clique sur la langue.
     const book = this.lService.changeLanguage(lang);
     this.bookEvent.emit(book);
     this.bookshelf = false;
   }
-  showShelf()
+  /**
+   * Inverse l'état de la bibliothèque puis émet un évènement indiquant l'état dans lequel doit être le livre.
+   */
+  showShelf(): void
   {
     this.bookshelf = !this.bookshelf;
     if(this.bookshelf)

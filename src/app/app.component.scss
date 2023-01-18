@@ -10,149 +10,155 @@ $coverImage : url(/assets/textures/leather.png);
         padding-top: 0;
         @include flex(center, center);
     }
-    main
+    .frame
     {
+        height: 95%;
+        width: fit-content;
         position: relative;
-        background-image: $coverImage;
-        background-color: var(--cover);
-        aspect-ratio: 1/1.4142;
-        max-width: 100%;
-        min-width: 90%;
-        @include media("desktop")
+        main
         {
-            min-width: 25%;
-            height: 95%;
-        }
-        
-        border-radius: 0 3px 3px 0;
-        box-shadow: 5px 5px 9px 3px rgba(0, 0, 0, 0.4);
-        .cover
-        {
-            position: absolute;
-            transition: rotate .7s;
-            transform-style: preserve-3d;
-            width: 100%;
-            height: 100%;
-            transform-origin: left center;
-            border-radius: inherit;
+            position: relative;
             background-image: $coverImage;
             background-color: var(--cover);
-            z-index: 10;
-            cursor: pointer;
-            box-shadow: 5px 5px 9px 3px rgba(0, 0, 0, 0.4);
-            .front
-            {
-                box-shadow: inset 7px 0 9px -7px rgba(0, 0, 0, 0.4);
-                background-image: $coverImage;
-                background-color: var(--cover);
-                transform-style: preserve-3d;
-                border-radius: 0 3px 3px 0;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                backface-visibility: hidden;
-                padding: 48px 0;
-                @include flex(space-between, center, column);
-                // z-index: 1;
-                h1, h2
-                {
-                    text-align: center;
-                    background-color: var(--cover-text);
-                    color: transparent;
-                    // text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
-                    text-shadow: -1px -1px 3px rgba(0,0,0,.5);
-                    background-clip: text;
-                    
-                }
-                h1
-                {
-                    font-size: 40px;
-                    position: relative;
-                    &::after
-                    {
-                        content: "";
-                        display: block;
-                        position: absolute;
-                        left: 20%;
-                        right: 20%;
-                        bottom: -10px;
-                        border-bottom: 3px solid var(--cover-decor);
-                        box-shadow: -1px -1px 2px rgba(0,0,0,.5);
-                    }
-                }
-            }
-            .back
-            {
-                @include page($reverse: true);
-                // z-index: 0;
-                rotate: y -180deg;
-                transform-origin: center;
-                backface-visibility: hidden;
-            }
-        }
-        nav
-        {
-            position: absolute;
-            white-space: nowrap;
-            @include flex(space-between, flex-end);
-            // gap: 5px;
-            bottom: 100%;
-            // left: 20px;
-            padding: 0 20px;
-            margin: -10px;
-            width: 100%;
+            aspect-ratio: 1/1.4142;
+            max-width: 100%;
+            min-width: 90%;
             @include media("desktop")
             {
-                bottom: unset;
-                width: fit-content;
-                // top: 50px;
-                padding: 50px 0;
-                left: 100%;
-                flex-direction: column;
-                align-items: flex-start;
+                min-width: 25%;
                 height: 100%;
             }
-            div
+            
+            border-radius: 0 3px 3px 0;
+            box-shadow: 5px 5px 9px 3px rgba(0, 0, 0, 0.4);
+            .cover
             {
-                @include flex(flex-start, flex-end);
-                gap: 5px;
-                @include media("desktop")
+                position: absolute;
+                transition: rotate .7s;
+                transform-style: preserve-3d;
+                width: 100%;
+                height: 100%;
+                transform-origin: left center;
+                border-radius: inherit;
+                background-image: $coverImage;
+                background-color: var(--cover);
+                z-index: 10;
+                cursor: pointer;
+                box-shadow: 5px 5px 9px 3px rgba(0, 0, 0, 0.4);
+                .front
                 {
-                    flex-direction: column;
-                    align-items: flex-start;
-                }
-
-                a, span
-                {
-                    // TODO : changer les langues en popup bibliothèque
-                    // writing-mode: vertical-rl;
-                    // text-orientation: upright;
-                    background-color: beige;
-                    box-shadow: 2px 0 3px 1px rgb(85, 85, 77);
-                    color: #6b6b6b;
-                    padding: 5px 15px 15px 15px;
-                    cursor: pointer;
-                    @include media("desktop")
+                    box-shadow: inset 7px 0 9px -7px rgba(0, 0, 0, 0.4);
+                    background-image: $coverImage;
+                    background-color: var(--cover);
+                    transform-style: preserve-3d;
+                    border-radius: 0 3px 3px 0;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    backface-visibility: hidden;
+                    padding: 48px 0;
+                    @include flex(space-between, center, column);
+                    // z-index: 1;
+                    h1, h2
                     {
-                        box-shadow: 0 2px 3px 1px rgb(85, 85, 77);
-                        padding: 5px 15px;
-                        width: 100%;
+                        text-align: center;
+                        background-color: var(--cover-text);
+                        color: transparent;
+                        // text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+                        text-shadow: -1px -1px 3px rgba(0,0,0,.5);
+                        background-clip: text;
+                        
                     }
-                    &.active
+                    h1
                     {
-                        padding-bottom: 30px;
-                        z-index: 7;
-                        box-shadow: 2px -2px 3px 1px rgb(85, 85, 77);
-                        @include media("desktop")
+                        font-size: 40px;
+                        position: relative;
+                        &::after
                         {
-                            padding-bottom: 5px;
-                            // padding-left: 30px;
-
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            left: 20%;
+                            right: 20%;
+                            bottom: -10px;
+                            border-bottom: 3px solid var(--cover-decor);
+                            box-shadow: -1px -1px 2px rgba(0,0,0,.5);
                         }
                     }
                 }
+                .back
+                {
+                    @include page($reverse: true);
+                    // z-index: 0;
+                    rotate: y -180deg;
+                    transform-origin: center;
+                    backface-visibility: hidden;
+                }
             }
-            
+            nav
+            {
+                position: absolute;
+                white-space: nowrap;
+                @include flex(space-between, flex-end);
+                // gap: 5px;
+                bottom: 100%;
+                // left: 20px;
+                padding: 0 20px;
+                margin: -10px;
+                width: 100%;
+                @include media("desktop")
+                {
+                    bottom: unset;
+                    width: fit-content;
+                    // top: 50px;
+                    padding: 50px 0;
+                    left: 100%;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    height: 100%;
+                }
+                div
+                {
+                    @include flex(flex-start, flex-end);
+                    gap: 5px;
+                    @include media("desktop")
+                    {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+    
+                    a, span
+                    {
+                        // TODO : changer les langues en popup bibliothèque
+                        // writing-mode: vertical-rl;
+                        // text-orientation: upright;
+                        background-color: beige;
+                        box-shadow: 2px 0 3px 1px rgb(85, 85, 77);
+                        color: #6b6b6b;
+                        padding: 5px 15px 15px 15px;
+                        cursor: pointer;
+                        @include media("desktop")
+                        {
+                            box-shadow: 0 2px 3px 1px rgb(85, 85, 77);
+                            padding: 5px 15px;
+                            width: 100%;
+                        }
+                        &.active
+                        {
+                            padding-bottom: 30px;
+                            z-index: 7;
+                            box-shadow: 2px -2px 3px 1px rgb(85, 85, 77);
+                            @include media("desktop")
+                            {
+                                padding-bottom: 5px;
+                                // padding-left: 30px;
+    
+                            }
+                        }
+                    }
+                }
+                
+            }
         }
     }
 }

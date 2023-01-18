@@ -1,5 +1,5 @@
 import { AnimationEvent } from '@angular/animations';
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, ViewChild } from '@angular/core';
 import { ChildrenOutletContexts } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { languageAnimation, pageAnimation } from './assets/animations/animations';
@@ -15,7 +15,7 @@ import { LanguageService } from './language.service';
   ]
 })
 export class AppComponent implements AfterViewInit {
-  // Le clique sur un svg avec firefox provoque une erreur.
+  // TODO : Le clique sur un svg avec firefox provoque une erreur.
   @ViewChild("body") body?: ElementRef;
   close:boolean = true;
   book: string = "idle";
@@ -23,18 +23,33 @@ export class AppComponent implements AfterViewInit {
   constructor(
     private contexts: ChildrenOutletContexts,
     private translate: TranslateService,
-    private lService: LanguageService
+    private lService: LanguageService,
+    private cd: ChangeDetectorRef
     ) {}
-  ngAfterViewInit()
+  /**
+   * Place une classe de langue par défaut sur la div body.
+   */
+  ngAfterViewInit():void
   {
     this.body?.nativeElement.classList.add(this.lService.language);
   }
-  getRouteAnimationData() 
+  /**
+   * Si le livre est ouvert, retourne l'animation liée à la route actuelle.
+   * @returns Nom de l'animation liée à la route.
+   */
+  getRouteAnimationData(): string|undefined
   {
     if(this.close) return;
+    
     return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
   }
-  toggleBook(cover: HTMLDivElement, open: boolean = false)
+  /**
+   * Ouvre ou ferme la couverture du livre.
+   * @param cover div représentant la couverture du livre
+   * @param open boolean indiquant si le livre doit être ouvert ou fermé
+   * @returns void
+   */
+  toggleBook(cover: HTMLDivElement, open: boolean = false): void
   {    
     if(!cover)return;
     if(cover.style.rotate && !open)
@@ -48,20 +63,28 @@ export class AppComponent implements AfterViewInit {
       this.close = false;
     }
   }
-  setBook(action: string)
+  /**
+   * Change l'état du livre avant de relancer la détection des changements.
+   * @param action string indiquant l'état du livre.
+   */
+  setBook(action: string): void
   {
-    console.log(action);
-    
-    this.book = action
+    this.book = action;
+    this.cd.detectChanges();
   }
-  changeBook($event: AnimationEvent)
+  /**
+   * Détecte la fin de l'animation et si il est en mode "retour".
+   * Provoque les changements de couleur et de langue avant de placer le livre en mode "idle"
+   * @param $event AnimationEvent 
+   */
+  changeBook($event: AnimationEvent): void
   {
     if($event.phaseName === "done" && this.book === "return")
     {
       this.body?.nativeElement.classList.remove(this.translate.currentLang);
       this.body?.nativeElement.classList.add(this.lService.language);
       
-      this.translate.use(this.lService.language).subscribe(()=>this.book = "idle"); 
+      this.translate.use(this.lService.language).subscribe(()=>this.setBook("idle")); 
     }
   }
 }

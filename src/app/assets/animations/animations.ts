@@ -1,5 +1,5 @@
 import { animate, query, state, style, transition, trigger } from "@angular/animations";
-
+// Animation pour la page suivante
 const nextPage = [
     style({ position: 'relative' }),
     query(':leave', 
@@ -14,6 +14,7 @@ const nextPage = [
     animate('700ms ease-out', style({ transform: 'rotateY(180deg)' }))
     ], { optional: true }),
 ];
+// Animation pour la page précédente
 const previousPage = [
     style({ position: 'relative' }),
     query(':enter', 
@@ -31,6 +32,7 @@ const previousPage = [
     animate('100ms ease-out', style({ boxShadow: 'none' }))
     ], { optional: true }),
 ];
+// Attribut une animation à chaque route. TODO: automatiser cela
 export const pageAnimation =
     trigger('routeAnimations', 
     [
@@ -41,6 +43,7 @@ export const pageAnimation =
         transition('NotFoundPage => *', previousPage),
         transition('* <=> *', nextPage)
     ]);
+// Animation de changement de livre.
 export const languageAnimation = 
     trigger("changeBook", [
         state("remove, return", style({

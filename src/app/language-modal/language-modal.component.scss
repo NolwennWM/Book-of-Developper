@@ -5,11 +5,15 @@ $shelf: #A87328;
 :host
 {
     position: absolute;
+    width: 100%;
+    height: 100%;
 }
 .language-btn{
     position: absolute;
-    right: 0;
-    top: 0;
+    cursor: pointer;
+    z-index: 15;
+    right: -50px;
+    bottom: 10%;
     width: fit-content;
     border: none;
     outline: none;
