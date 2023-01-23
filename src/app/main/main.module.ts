@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HomepageComponent } from './homepage/homepage.component';
 import { RouterModule, Routes } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { AssociationsComponent } from './associations/associations.component';
+import { SkillsComponent } from './skills/skills.component';
 
 const mainRoutes: Routes = [
   {path: "home", component: HomepageComponent, data: { animation: 'HomePage' }},
@@ -12,7 +14,9 @@ const mainRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    HomepageComponent
+    HomepageComponent,
+    AssociationsComponent,
+    SkillsComponent
   ],
   imports: [
     CommonModule,

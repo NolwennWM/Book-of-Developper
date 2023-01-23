@@ -12,12 +12,17 @@ $shelf: #A87328;
     position: absolute;
     cursor: pointer;
     z-index: 15;
-    right: -50px;
-    bottom: 10%;
+    right: 10px;
+    bottom: 10px;
     width: fit-content;
     border: none;
     outline: none;
     background-color: transparent;
+    @include media("tablet")
+    {
+        right: -50px;
+        bottom: 10%;
+    }
     svg
     {
         width: 3rem;

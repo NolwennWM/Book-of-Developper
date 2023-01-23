@@ -5,7 +5,7 @@ $coverImage : url(/assets/textures/leather.png);
 {
     height: 100vh;
     padding-top: 50px;
-    @include media("desktop")
+    @include media("tablet")
     {
         padding-top: 0;
         @include flex(center, center);
@@ -13,17 +13,22 @@ $coverImage : url(/assets/textures/leather.png);
     .frame
     {
         height: 95%;
-        width: fit-content;
+        width: 100%;
         position: relative;
+        @include media("tablet")
+        {
+            width: fit-content;
+        }
         main
         {
             position: relative;
             background-image: $coverImage;
             background-color: var(--cover);
             aspect-ratio: 1/1.4142;
-            max-width: 100%;
+            width: 100%;
             min-width: 90%;
-            @include media("desktop")
+            max-width: 100%;
+            @include media("tablet")
             {
                 min-width: 25%;
                 height: 100%;
