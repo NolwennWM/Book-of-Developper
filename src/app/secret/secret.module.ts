@@ -6,7 +6,7 @@ import { TranslateModule } from '@ngx-translate/core';
 
 const secretRoutes: Routes = 
 [
-  {path: "merci", component: MerciComponent, data: {Animation: "ThankPage"}}
+  {path: "merci", component: MerciComponent, data: {Animation: "ThanksPage"}}
 ]
 
 @NgModule({

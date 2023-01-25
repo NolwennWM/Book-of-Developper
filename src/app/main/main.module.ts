@@ -9,6 +9,9 @@ import { SkillsComponent } from './skills/skills.component';
 const mainRoutes: Routes = [
   {path: "home", component: HomepageComponent, data: { animation: 'HomePage' }},
   {path: "accueil", redirectTo: "home", pathMatch: "full"},
+  {path: "associations", component: AssociationsComponent, data: {animation: "AssociationsPage"}},
+  {path: "skills", component: SkillsComponent, data: {animation: "SkillsPage"}},
+  {path: "competences", redirectTo: "skills", pathMatch: "full"},
   {path: "", redirectTo: "home", pathMatch: "full"}
 ];
 

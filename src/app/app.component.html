@@ -14,9 +14,10 @@
             </div>
             <nav>
                 <div class="navigation" (click)="toggleBook(cover, true)">
-                    <a routerLink="/home" routerLinkActive="active">{{"app.nav.homelink" | translate}}</a>
-                    <a routerLink="/jeux/selection" routerLinkActive="active">{{"app.nav.gamelink" | translate}}</a> 
-                    <a routerLink="/truc" routerLinkActive="active">404</a>
+                    <a routerLink="/home" routerLinkActive="active">{{ "app.nav.homeLink" | translate }}</a>
+                    <a routerLink="/skills" routerLinkActive="active">{{ "app.nav.skillsLink" | translate }}</a>
+                    <a routerLink="/associations" routerLinkActive="active">{{ "app.nav.associationsLink" | translate }}</a>
+                    <a routerLink="/jeux/selection" routerLinkActive="active">{{ "app.nav.gameLink" | translate }}</a> 
                 </div>
                 <!-- TODO régler une taille fixe pour chaque lien -->
             </nav>

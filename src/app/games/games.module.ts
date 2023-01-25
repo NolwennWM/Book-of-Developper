@@ -4,7 +4,7 @@ import { LoaderComponent } from './loader/loader.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const gamesRoutes: Routes = [
-  {path:"jeux/:name", component:LoaderComponent, data: { animation: 'GamePage' }}
+  {path:"jeux/:name", component:LoaderComponent, data: { animation: 'GamesPage' }}
 ];
 
 @NgModule({

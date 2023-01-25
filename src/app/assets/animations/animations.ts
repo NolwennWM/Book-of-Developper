@@ -1,5 +1,7 @@
-import { animate, query, state, style, transition, trigger } from "@angular/animations";
-// Animation pour la page suivante
+import { animate, AnimationTransitionMetadata, query, state, style, transition, trigger } from "@angular/animations";
+/**
+ * Animation pour la page suivante
+ */
 const nextPage = [
     style({ position: 'relative' }),
     query(':leave', 
@@ -14,7 +16,9 @@ const nextPage = [
     animate('700ms ease-out', style({ transform: 'rotateY(180deg)' }))
     ], { optional: true }),
 ];
-// Animation pour la page précédente
+/**
+ * Animation pour la page précédente
+ */
 const previousPage = [
     style({ position: 'relative' }),
     query(':enter', 
@@ -32,18 +36,33 @@ const previousPage = [
     animate('100ms ease-out', style({ boxShadow: 'none' }))
     ], { optional: true }),
 ];
-// Attribut une animation à chaque route. TODO: automatiser cela
-export const pageAnimation =
-    trigger('routeAnimations', 
-    [
-        transition('HomePage => *', nextPage),
-        transition('* => HomePage', previousPage),
-        transition('GamePage => NotFoundPage', nextPage),
-        transition('* => NotFoundPage', nextPage),
-        transition('NotFoundPage => *', previousPage),
-        transition('* <=> *', nextPage)
-    ]);
-// Animation de changement de livre.
+/**
+ * Liste des routes possibles.
+ */
+const pages: string[] = [
+    "ThanksPage",
+    "HomePage",
+    "SkillsPage",
+    "AssociationsPage",
+    "GamesPage",
+    "NotFoundPage"
+];
+/**
+ * Animations attribués à chaque route.
+ */
+const triggers = pages.reduce((acc: AnimationTransitionMetadata[], cur)=>acc.concat([
+    transition(`${cur} => *`, nextPage),
+    transition(`* => ${cur}`, previousPage),
+]), []);
+// console.log(triggers);
+
+/**
+ * Animation pour le changement de page.
+ */
+export const pageAnimation = trigger('routeAnimations', triggers);
+/**
+ * Animation de changement de livre.
+ */
 export const languageAnimation = 
     trigger("changeBook", [
         state("remove, return", style({

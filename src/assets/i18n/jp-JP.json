@@ -5,16 +5,33 @@
         "nav":
         {
             "homelink": "ホーム",
-            "gamelink": "ゲーム"
+            "gamelink": "ゲーム",
+            "skillsLink": "Compétences",
+            "associationsLink": "Associations"
         }
     },
     "homepage":
     {
         "title": "<ruby>章句<rp>(</rp><rt>しょうく</rt><rp>)</rp></ruby> 1 : <ruby>前付<rp>(</rp><rt>まえづ</rt><rp>)</rp></ruby>け",
-        "p1": "Il était une fois un développeur à la recherche de nouvelles créations à faire naître de ses mains.<br>Peu lui importait la difficulté de ce qu'il devait programmer, il prenaît grand plaisir à pourfendre les bugs.<br>Sous ses doigts agiles prenaient forme toute sorte d'application web. "
+        "p1": "Il était une fois un développeur à la recherche de nouvelles créations à faire naître de ses mains.<br>Peu lui importait la difficulté de ce qu'il devait programmer, il prenait grand plaisir à pourfendre les bugs.<br>Sous ses doigts agiles prenaient forme toute sorte d'application web. "
     },
     "not-found":
     {
         "message": "<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>はそのページを<ruby>吹<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>き<ruby>飛<rp>(</rp><rt>と</rt><rp>)</rp></ruby>ばした… <span class='vertical'>404</span>"
+    },
+    "secret":
+    {
+        "merci":
+        {
+            "intro": "Bienvenue sur cette page, elle ne vous apprendra rien à mon sujet ou mes compétences. <br> Ici se trouve mes remerciements aux gens qui ont croisés plus ou moins longtemps mon chemin et qui l'on malheureusement définitivement quitté.",
+            "g-mere": "Ma grand mère, Roseline FARGUES qui jouait avec moi pendant mon enfance.",
+            "g-pere": "Mon grand père, Paul MARQUISET qui m'accueillait à ses côtés et dont j'aurais aimé connaître l'histoire.",
+            "pere": "Mon père, Pierre-Yves MARQUISET qui m'a apprit nombres de choses durant ma vie et qui prenait le temps de s'intéresser à mes loisirs.",
+            "oncle": "Mon oncle, Johnatan TROTIGNON qui m'a fait découvrir le développement et sans qui je ne serais pas là aujourd’hui.",
+            "amis": 
+            {
+                "monique": "Monique MARECAUX toujours rayonnante dans les activités de l'association."
+            }
+        }
     }
 }

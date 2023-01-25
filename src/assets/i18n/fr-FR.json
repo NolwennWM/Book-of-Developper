@@ -4,17 +4,34 @@
         "title": "Les Contes <br> d'un Développeur",
         "nav":
         {
-            "homelink": "Accueil",
-            "gamelink": "Jeux"
+            "homeLink": "Accueil",
+            "gameLink": "Jeux",
+            "skillsLink": "Compétences",
+            "associationsLink": "Associations"
         }
     },
     "homepage":
     {
         "title": "Chapitre 1 : Introduction",
-        "p1": "Il était une fois un développeur à la recherche de nouvelles créations à faire naître de ses mains.<br>Peu lui importait la difficulté de ce qu'il devait programmer, il prenaît grand plaisir à pourfendre les bugs.<br>Sous ses doigts agiles prenaient forme toute sorte d'application web. "
+        "p1": "Il était une fois un développeur à la recherche de nouvelles créations à faire naître de ses mains.<br>Peu lui importait la difficulté de ce qu'il devait programmer, il prenait grand plaisir à pourfendre les bugs.<br>Sous ses doigts agiles prenaient forme toute sorte d'application web. "
     },
     "not-found":
     {
         "message": "Le temps à emporté cette page... 404."
+    },
+    "secret":
+    {
+        "merci":
+        {
+            "intro": "Bienvenue sur cette page, elle ne vous apprendra rien à mon sujet ou mes compétences. <br> Ici se trouve mes remerciements aux gens qui ont croisés plus ou moins longtemps mon chemin et qui l'on malheureusement définitivement quitté.",
+            "g-mere": "Ma grand mère, Roseline FARGUES qui jouait avec moi pendant mon enfance.",
+            "g-pere": "Mon grand père, Paul MARQUISET qui m'accueillait à ses côtés et dont j'aurais aimé connaître l'histoire.",
+            "pere": "Mon père, Pierre-Yves MARQUISET qui m'a apprit nombres de choses durant ma vie et qui prenait le temps de s'intéresser à mes loisirs.",
+            "oncle": "Mon oncle, Johnatan TROTIGNON qui m'a fait découvrir le développement et sans qui je ne serais pas là aujourd’hui.",
+            "amis": 
+            {
+                "monique": "Monique MARECAUX toujours rayonnante dans les activités de l'association."
+            }
+        }
     }
 }
