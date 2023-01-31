@@ -10,10 +10,27 @@
             "associationsLink": "Associations"
         }
     },
-    "homepage":
+    "homePage":
     {
         "title": "Chapitre 1 : Introduction",
         "p1": "Il était une fois un développeur à la recherche de nouvelles créations à faire naître de ses mains.<br>Peu lui importait la difficulté de ce qu'il devait programmer, il prenait grand plaisir à pourfendre les bugs.<br>Sous ses doigts agiles prenaient forme toute sorte d'application web. "
+    },
+    "skillsPage":
+    {
+        "title": "Chapitre 2 : Compétences",
+        "p1": "Ce développeur avec enthousiasme apprenait à se servir de nouveaux outils. <br> Mais il savait que multiplier les outils sans fin n'avait que peu de sens. Il prenait donc grand soin de perfectionner et améliorer ses bon vieux outils.",
+        "p2": "Il avait déjà de nombreuses cordes à son arc, entre autres choses, on pouvait citer :",
+        "skills":
+        {
+            "html": "<strong>HTML</strong>, une base dans son métier.",
+            "css": "<strong>CSS</strong>, pour aller de paire avec le précédent.",
+            "scss": "<strong>SCSS</strong>, pour gagner en efficacité"
+        }
+    },
+    "AssociationPage":
+    {
+        "title": "Chapitre 3 : Associations",
+        "p1": ""
     },
     "not-found":
     {
