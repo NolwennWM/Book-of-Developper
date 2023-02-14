@@ -19,7 +19,7 @@ body
 // TODO : Un jour peut être le livre en sens de  lecture japonais.
 // .jp-JP{
 //     transform: scaleX(-1);}
-.jp-JP .translate
+.body.jp-JP .translate
 {
     width: 100%;
     text-align: end;
@@ -28,4 +28,8 @@ body
     {
         text-orientation: upright;
     }
+}
+.body:not(.jp-JP) p
+{
+    text-align: justify;
 }

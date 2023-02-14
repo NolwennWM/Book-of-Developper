@@ -5,20 +5,21 @@
         <p><span [innerHTML]="'skillsPage.p2' | translate"></span></p>
     </div>
     <div class="animation-container">
-        <div class="cercle">
-            <div class="logo"><img src="/assets/logos/icon-html-5.svg" alt=""></div>
-            <div class="logo"><img src="/assets/logos/icon-css3.svg" alt=""></div>
-            <div class="logo"><img src="/assets/logos/icon-javascript.svg" alt=""></div>
-            <div class="logo"><img src="/assets/logos/icon-jquery.svg" alt=""></div>
-            <div class="logo"><img src="/assets/logos/icon-typescript.svg" alt=""></div>
-            <div class="logo"><img src="/assets/logos/icon-angular.svg" alt=""></div>
-            <div class="logo"><img src="/assets/logos/icon-mysql.svg" alt=""></div>
-            <div class="logo"><img src="/assets/logos/icon-php.svg" alt=""></div>
-            <div class="logo"><img src="/assets/logos/icon-symfony.svg" alt=""></div>
+        <div class="cercle" #skills (click)="selectSkill($event, skills)">
+            <div class="logo"><img data-skill="html" src="/assets/logos/icon-html-5.svg" alt="logo HTML 5"></div>
+            <div class="logo"><img data-skill="css" src="/assets/logos/icon-css3.svg" alt="logo CSS 3"></div>
+            <div class="logo"><img data-skill="sass" src="/assets/logos/icon-sass.svg" alt="logo SASS"></div>
+            <div class="logo"><img data-skill="js" src="/assets/logos/icon-javascript.svg" alt="logo Javascript"></div>
+            <div class="logo"><img data-skill="jquery" src="/assets/logos/icon-jquery.svg" alt="logo JQuery"></div>
+            <div class="logo"><img data-skill="ts" src="/assets/logos/icon-typescript.svg" alt="logo Typescript"></div>
+            <div class="logo"><img data-skill="angular" src="/assets/logos/icon-angular.svg" alt="logo Angular"></div>
+            <div class="logo"><img data-skill="mysql" src="/assets/logos/icon-mysql.svg" alt="logo MySQL"></div>
+            <div class="logo"><img data-skill="php" src="/assets/logos/icon-php.svg" alt="logo PHP"></div>
+            <div class="logo"><img data-skill="symfony" src="/assets/logos/icon-symfony.svg" alt="logo Symfony"></div>
         </div>
-        <div class="detail">
-            <h3>Typescript</h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aliquam laborum eaque asperiores dignissimos ipsa ut accusamus repellendus! Nobis, nam distinctio! Cum possimus quas qui ex tempore libero! Et, excepturi!
+        <div class="detail" >
+            <div class="detailEnter" #detailEnter></div>
+            <div class="detailLeave" #detailLeave [innerHTML]="'skillsPage.skills.default' | translate"></div>
         </div>
     </div>
 </div>
