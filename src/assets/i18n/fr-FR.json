@@ -23,16 +23,16 @@
         "skills":
         {
             "default": "<h3>Compétences</h3> <p>Je vous prie de bien vouloir sélectionner une des compétences qui nous entoures.</p> ",
-            "html": "<h3>HTML 5</h3> une base dans son métier.",
-            "css": "<h3>CSS 3</h3> pour aller de paire avec le précédent.",
-            "sass": "<h3>SASS - SCSS</h3> pour gagner en efficacité",
-            "js": "<h3>Javascript</h3> pour gagner en efficacité",
-            "jquery": "<h3>JQuery</h3> pour gagner en efficacité",
-            "ts": "<h3>Typescript</h3> pour gagner en efficacité",
-            "angular": "<h3>Angular</h3> pour gagner en efficacité",
-            "mysql": "<h3>MySQL</h3> pour gagner en efficacité",
-            "php": "<h3>PHP</h3> pour gagner en efficacité",
-            "symfony": "<h3>Symfony</h3> pour gagner en efficacité"
+            "html": "<h3>HTML&nbsp;5</h3> <p>Base de toute application web, HTML cache derrière son apparente simplicité, une multitude de petits secrets. Sémantique et Accessibilité sont les maîtres mots de son HTML.</p>",
+            "css": "<h3>CSS&nbsp;3</h3> <p>Si les mystères de l'art du design sont encore à atteindre, la reproduction de toute maquette est un défi à sa hauteur.</p>",
+            "sass": "<h3>SASS&nbsp;-&nbsp;SCSS</h3> <p>Quand il découvrit SASS, le développeur compris qu'il pourrait se servir de cet outil pour gagner en temps et efficacité lors de ses aventures colorés.</p>",
+            "js": "<h3>Javascript</h3> <p>TODO</p>",
+            "jquery": "<h3>JQuery</h3> <p>TODO</p>",
+            "ts": "<h3>Typescript</h3> <p>TODO</p>",
+            "angular": "<h3>Angular</h3> <p>TODO</p>",
+            "mysql": "<h3>MySQL</h3> <p>TODO</p>",
+            "php": "<h3>PHP</h3> <p>TODO</p>",
+            "symfony": "<h3>Symfony</h3> <p>TODO</p>"
         }
     },
     "AssociationPage":

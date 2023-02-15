@@ -3,6 +3,6 @@ export const fondu = {
 }
 export const fonduOptions: KeyframeAnimationOptions = {
     duration: 500,
-    iterations: 1, 
-    direction: "reverse"
+    iterations: 1,
+    fill: "forwards"
 }
