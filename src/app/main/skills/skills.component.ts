@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { tap } from 'rxjs';
 import { LanguageService } from 'src/app/language.service';
+import { fondu, fonduOptions } from 'src/app/assets/animations/animate';
 
 @Component({
   selector: 'app-skills',
@@ -26,10 +26,15 @@ export class SkillsComponent {
     const skill = event.target.dataset["skill"];
     if(!skill) return;
     this.language.getTranslation("skillsPage.skills."+skill)
-      .subscribe(text=>{        
+      .subscribe(async text=>{        
         if(!this.detailEnter || !this.detailLeave)return;
         // TODO: Gérer le changement avec animate
+        const fonduReverse: KeyframeAnimationOptions = {...fonduOptions, direction: "reverse"};
         this.detailEnter.nativeElement.innerHTML = text;
+        const animeEnter = this.detailEnter.nativeElement.animate(fondu, fonduOptions);
+        const animeLeave = this.detailLeave.nativeElement.animate(fondu, fonduReverse);
+        await animeEnter.finished;
+
         // this.detailEnter.nativeElement.animate();
         // this.detailEnter.nativeElement.style.opacity = "1";
         // this.detailLeave.nativeElement.style.opacity = "0";
