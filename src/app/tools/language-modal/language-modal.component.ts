@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output} from '@angular/core';
-import { LanguageService } from '../language.service';
+import { LanguageService } from '../../service/language.service';
 
 @Component({
   selector: 'app-language-modal',

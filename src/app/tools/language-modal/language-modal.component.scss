@@ -11,15 +11,16 @@ $shelf: #A87328;
 .language-btn{
     position: absolute;
     cursor: pointer;
-    z-index: 15;
+    z-index: 10;
     right: 10px;
-    bottom: 10px;
+    top: -40px;
     width: fit-content;
     border: none;
     outline: none;
     background-color: transparent;
     @include media("tablet")
     {
+        z-index: 15;
         right: -50px;
         bottom: 10%;
     }

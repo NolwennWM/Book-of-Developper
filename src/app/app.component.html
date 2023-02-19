@@ -5,7 +5,7 @@
             [@routeAnimations]="getRouteAnimationData()" 
             [@changeBook]="book"  
             (@changeBook.done)="changeBook($event)">
-            <div class="cover" #cover (click)="toggleBook(cover)">
+            <div class="cover" #cover (click)="toggleBook()">
                 <div class="back"></div>
                 <div class="front">
                     <h1 [innerHTML]="'app.title' | translate"></h1>
@@ -13,7 +13,8 @@
                 </div>
             </div>
             <nav>
-                <div class="navigation" (click)="toggleBook(cover, true)">
+                <div class="navigation" (click)="toggleBook(true)">
+                    <a routerLink="/summary" routerLinkActive="active" class="burger">☰</a>
                     <a routerLink="/home" routerLinkActive="active">{{ "app.nav.homeLink" | translate }}</a>
                     <a routerLink="/skills" routerLinkActive="active">{{ "app.nav.skillsLink" | translate }}</a>
                     <a routerLink="/associations" routerLinkActive="active">{{ "app.nav.associationsLink" | translate }}</a>

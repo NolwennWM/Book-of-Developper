@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { LanguageService } from 'src/app/language.service';
+import { LanguageService } from 'src/app/service/language.service';
 import { fondu, fonduOptions } from 'src/app/assets/animations/animate';
 
 @Component({

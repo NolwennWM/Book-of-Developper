@@ -41,6 +41,7 @@ const previousPage = [
  */
 const pages: string[] = [
     "ThanksPage",
+    "SummaryPage",
     "HomePage",
     "SkillsPage",
     "AssociationsPage",
