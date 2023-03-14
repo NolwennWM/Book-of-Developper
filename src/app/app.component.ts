@@ -1,8 +1,7 @@
 import { AnimationEvent } from '@angular/animations';
-import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, ViewChild } from '@angular/core';
-import { ChildrenOutletContexts, Route, Router } from '@angular/router';
+import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ChildrenOutletContexts, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { findIndex } from 'rxjs';
 import { languageAnimation, pageAnimation } from './assets/animations/animations';
 import { LanguageService } from './service/language.service';
 
@@ -18,7 +17,7 @@ import { LanguageService } from './service/language.service';
     '(document:keyup)': 'handleKeyboardEvent($event)'
   }
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent implements AfterViewInit, OnInit {
   // TODO : Le clique sur un svg avec firefox provoque une erreur.
   @ViewChild("body") body?: ElementRef<HTMLDivElement>;
   @ViewChild("cover") cover?: ElementRef<HTMLDivElement>;
@@ -26,7 +25,7 @@ export class AppComponent implements AfterViewInit {
   book: string = "idle";
   routeIndex: number = 0;
   routes: string[] = [
-    "/", "skills", "associations", "jeux/selection"
+    "home", "skills", "associations", "jeux/selection"
   ];
 
   constructor(
@@ -36,6 +35,13 @@ export class AppComponent implements AfterViewInit {
     private cd: ChangeDetectorRef,
     private route: Router
     ) {}
+  ngOnInit(): void
+  {
+    this.lService.defaultLanguage();
+    
+    console.log(window.location.pathname);
+    
+  }
   /**
    * Place une classe de langue par défaut sur la div body.
    */
@@ -51,7 +57,7 @@ export class AppComponent implements AfterViewInit {
   getRouteAnimationData(): string|undefined
   {
     if(this.close) return;
-    
+    this.setRouteIndex();
     return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
   }
   /**
@@ -135,7 +141,15 @@ export class AppComponent implements AfterViewInit {
       this.toggleBook();
       return;
     }
+    // else if()
     this.routeIndex = i;
     this.route.navigate([this.routes[i]]);
+  }
+  setRouteIndex()
+  {
+    const route = window.location.pathname.substring(1);
+    const index = this.routes.indexOf(route);
+    if(index === -1) return;
+    this.routeIndex = index;
   }
 }

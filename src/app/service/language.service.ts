@@ -26,7 +26,7 @@ export class LanguageService {
     }
       
     this.translate.setDefaultLang(this.language);
-    
+    this.translate.use(this.language);
   }
   /**
    * Stock la langue en localStorage et retourne le nouvel état du livre.

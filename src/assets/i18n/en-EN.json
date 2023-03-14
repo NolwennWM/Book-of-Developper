@@ -4,16 +4,36 @@
         "title": "A Developer's <br> Tales",
         "nav":
         {
-            "homelink": "Home",
-            "gamelink": "Game",
+            "homeLink": "Home",
+            "gameLink": "Game",
             "skillsLink": "Compétences",
             "associationsLink": "Associations"
         }
     },
-    "homepage":
+    "homePage":
     {
         "title": "Chapter 1 : Introduction",
         "p1": "Il était une fois un développeur à la recherche de nouvelles créations à faire naître de ses mains.<br>Peu lui importait la difficulté de ce qu'il devait programmer, il prenait grand plaisir à pourfendre les bugs.<br>Sous ses doigts agiles prenaient forme toute sorte d'application web. "
+    },
+    "skillsPage":
+    {
+        "title": "Chapitre 2 : Compétences",
+        "p1": "Ce développeur avec enthousiasme apprenait à se servir de nouveaux outils. <br> Mais il savait que multiplier les outils sans fin n'avait que peu de sens. Il prenait donc grand soin de perfectionner et améliorer ses bon vieux outils.",
+        "p2": "Il avait déjà de nombreuses cordes à son arc, entre autres choses, on pouvait citer :",
+        "skills":
+        {
+            "default": "<h3>Compétences</h3> <p>Je vous prie de bien vouloir sélectionner une des compétences qui nous entoures.</p> ",
+            "html": "<h3>HTML&nbsp;5</h3> <p>Base de toute application web, HTML cache derrière son apparente simplicité, une multitude de petits secrets. Sémantique et Accessibilité sont les maîtres mots de son HTML.</p>",
+            "css": "<h3>CSS&nbsp;3</h3> <p>Si les mystères de l'art du design sont encore à atteindre, la reproduction de toute maquette est un défi à sa hauteur.</p>",
+            "sass": "<h3>SASS&nbsp;-&nbsp;SCSS</h3> <p>Quand il découvrit SASS, le développeur compris qu'il pourrait se servir de cet outil pour gagner en temps et efficacité lors de ses aventures colorés.</p>",
+            "js": "<h3>Javascript</h3> <p>TODO</p>",
+            "jquery": "<h3>JQuery</h3> <p>TODO</p>",
+            "ts": "<h3>Typescript</h3> <p>TODO</p>",
+            "angular": "<h3>Angular</h3> <p>TODO</p>",
+            "mysql": "<h3>MySQL</h3> <p>TODO</p>",
+            "php": "<h3>PHP</h3> <p>TODO</p>",
+            "symfony": "<h3>Symfony</h3> <p>TODO</p>"
+        }
     },
     "not-found":
     {

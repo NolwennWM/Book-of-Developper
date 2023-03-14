@@ -13,7 +13,7 @@ export class LanguageModalComponent {
   constructor(private lService: LanguageService){}
   /**
    * Change la langue et émet un évènement indiquant un nouvel état du livre.
-   * @param lang langue selectionné
+   * @param lang langue sélectionnée
    */
   selectLanguage(lang : string): void
   {
