@@ -13,7 +13,9 @@
     "homePage":
     {
         "title": "Chapitre 1 : Introduction",
-        "p1": "Il était une fois un développeur à la recherche de nouvelles créations à faire naître de ses mains.<br>Peu lui importait la difficulté de ce qu'il devait programmer, il prenait grand plaisir à pourfendre les bugs.<br>Sous ses doigts agiles prenaient forme toute sorte d'application web. "
+        "p1": "Il était une fois un développeur à la recherche de nouvelles créations à faire naître de ses mains.<br>Peu lui importait la difficulté de ce qu'il devait programmer, il prenait grand plaisir à pourfendre les bugs.<br>Sous ses doigts agiles prenaient forme toute sorte d'application web. ",
+        "p2": "Todo carrière",
+        "p3": "Todo loisirs"
     },
     "skillsPage":
     {
@@ -35,10 +37,22 @@
             "symfony": "<h3>Symfony</h3> <p>TODO</p>"
         }
     },
-    "AssociationPage":
+    "associationsPage":
     {
         "title": "Chapitre 3 : Associations",
-        "p1": ""
+        "p1": "Todo"
+    },
+    "gamesPage":
+    {
+        "title": "Chapitre 4 : Jeux",
+        "p1": "Todo",
+        "games":
+        {
+            "labyrinth": "Le Labyrinthe",
+            "ticTacToe": "Le tic tac toe",
+            "fillLine": "Remplir les cases",
+            "priceIsRight": "Le juste prix"
+        }
     },
     "not-found":
     {

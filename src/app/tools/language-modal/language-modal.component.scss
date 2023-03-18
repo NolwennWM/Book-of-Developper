@@ -18,10 +18,11 @@ $shelf: #A87328;
     border: none;
     outline: none;
     background-color: transparent;
-    @include media("tablet")
+    @include media("desktop")
     {
         z-index: 15;
         right: -50px;
+        top: auto;
         bottom: 10%;
     }
     svg

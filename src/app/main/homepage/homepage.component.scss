@@ -3,3 +3,11 @@
 :host{
     @include page();
 }
+.img-p
+{
+    filter: sepia(100%);
+    float: right;
+    width: 50%;
+    shape-outside: margin-box;
+    border-radius: 50%;
+}

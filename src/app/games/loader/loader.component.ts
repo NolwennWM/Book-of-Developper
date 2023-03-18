@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { Observable, Subscription } from 'rxjs';
 import { Game } from '../gamesCollection/Game';
 
@@ -13,7 +14,11 @@ export class LoaderComponent implements AfterViewInit {
   @ViewChild("gameZone") gameZone?: ElementRef<HTMLDivElement>;
   game?: Game;
 
-  constructor(private renderer: Renderer2, private route: ActivatedRoute, private router: Router) {}
+  constructor(
+    private renderer: Renderer2, 
+    private route: ActivatedRoute, 
+    private router: Router,
+    private translate: TranslateService) {}
 
   ngAfterViewInit(): void {
     // On s'abonne à tout changement de paramètre de la page.

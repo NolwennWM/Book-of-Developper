@@ -1,11 +1,15 @@
-<div class="page"><p>loader works!</p>
+<div class="page">
+    <h2 [innerHTML]="'gamesPage.title' | translate"></h2>
+    <p>
+        <span [innerHTML]="'gamesPage.p1' | translate"></span>
+    </p>
     <nav>
-        <ul>
-            <li><a routerLink="/jeux/labyrinthe">Labyrinthe</a></li>
-            <li><a routerLink="/jeux/morpion">Morpion</a></li>
-            <li><a routerLink="/jeux/fillline">Remplissage de case</a></li>
-            <li><a routerLink="/jeux/justeprix">Plus ou Moins le Juste Prix</a></li>
-        </ul>
+        <menu>
+            <li><a routerLink="/jeux/labyrinthe" [innerHTML]="'gamesPage.games.labyrinth' | translate">Labyrinthe</a></li>
+            <li><a routerLink="/jeux/morpion" [innerHTML]="'gamesPage.games.ticTacToe' | translate">Morpion</a></li>
+            <li><a routerLink="/jeux/fillline" [innerHTML]="'gamesPage.games.fillLine' | translate">Remplissage de case</a></li>
+            <!-- <li><a routerLink="/jeux/justeprix" [innerHTML]="'gamesPage.games.priceIsRight' | translate">Plus ou Moins le Juste Prix</a></li> -->
+        </menu>
     </nav>
     
     <div class="zone" #gameZone></div>

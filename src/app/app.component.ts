@@ -130,7 +130,9 @@ export class AppComponent implements AfterViewInit, OnInit {
    */
   changeRoute(nav: number)
   {
+    if(this.routes[this.routeIndex].includes("jeux")) return;
     let i = this.routeIndex + nav;
+    
     if(this.close)
     {
       this.toggleBook(true);
@@ -141,7 +143,6 @@ export class AppComponent implements AfterViewInit, OnInit {
       this.toggleBook();
       return;
     }
-    // else if()
     this.routeIndex = i;
     this.route.navigate([this.routes[i]]);
   }
