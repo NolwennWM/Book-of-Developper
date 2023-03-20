@@ -23,6 +23,7 @@ export class AppComponent implements AfterViewInit, OnInit {
   @ViewChild("cover") cover?: ElementRef<HTMLDivElement>;
   close:boolean = true;
   book: string = "idle";
+  year: number = new Date().getFullYear();
   routeIndex: number = 0;
   routes: string[] = [
     "home", "skills", "associations", "jeux/selection"

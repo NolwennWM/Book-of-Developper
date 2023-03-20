@@ -10,11 +10,20 @@ body
     overflow: hidden;
     .page
     {
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 100%;
+        padding: 0 10px 0 5px;
+        // TODO: changer design scrollbar
         h2,h3
         {
             text-decoration: underline;
             margin-bottom: 5px;
+        }
+        .img-p
+        {
+            filter: sepia(100%);
+            shape-outside: margin-box;
         }
     }
     

@@ -3,3 +3,24 @@
 :host{
     @include page();
 }
+.img-p
+{
+    width: 45%;
+    margin: 5px;
+}
+.jp
+{
+    .img-p
+    {
+        float: right;
+        border-radius: 5px;
+    }
+}
+.jdr
+{
+    .img-p
+    {
+        float: left;
+        border-radius: 50%;
+    }
+}
