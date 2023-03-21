@@ -15,6 +15,21 @@ body
         max-height: 100%;
         padding: 0 10px 0 5px;
         // TODO: changer design scrollbar
+        scrollbar-gutter: stable;
+        // scrollbar design firefox
+        scrollbar-width: thin;
+        scrollbar-color: #e0c9a6aa var(--cover);
+        // scrollbar design chromium
+        &::-webkit-scrollbar
+        {
+            width: 8px;
+            height: 100%;
+            background-color: var(--cover);
+        }
+        &::-webkit-scrollbar-thumb
+        {
+            background-color: #e0c9a6aa;
+        }
         h2,h3
         {
             text-decoration: underline;

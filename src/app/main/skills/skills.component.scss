@@ -16,6 +16,8 @@ $skills: 10;
         {
             // TODO en petite taille, le cercle dépasse
             width: 100%;
+            aspect-ratio: 1/1;
+            overflow: hidden;
             position: relative;
             caret-color: transparent;
             .cercle
