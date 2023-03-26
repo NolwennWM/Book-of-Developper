@@ -6,14 +6,16 @@
         {
             "homeLink": "ホーム",
             "gameLink": "ゲーム",
-            "skillsLink": "Compétences",
-            "associationsLink": "Associations"
+            "skillsLink": "<ruby>能力<rp>(</rp><rt>のうりょく</rt><rp>)</rp></ruby>",
+            "associationsLink": "<ruby>協会<rp>(</rp><rt>きょうかい</rt><rp>)</rp></ruby>" 
         }
     },
     "homePage":
     {
         "title": "<ruby>章句<rp>(</rp><rt>しょうく</rt><rp>)</rp></ruby> 1 : <ruby>前付<rp>(</rp><rt>まえづ</rt><rp>)</rp></ruby>け",
-        "p1": "Il était une fois un développeur à la recherche de nouvelles créations à faire naître de ses mains.<br>Peu lui importait la difficulté de ce qu'il devait programmer, il prenait grand plaisir à pourfendre les bugs.<br>Sous ses doigts agiles prenaient forme toute sorte d'application web. "
+        "p1": "<ruby>昔々<rp>(</rp><rt>むかしむかし</rt><rp>)</rp></ruby>、あるプログラマーが<ruby>自分<rp>(</rp><rt>じぶん</rt><rp>)</rp></ruby>の<ruby>手<rp>(</rp><rt>て</rt><rp>)</rp></ruby>から<ruby>生<rp>(</rp><rt>う</rt><rp>)</rp></ruby>まれる<ruby>新<rp>(</rp><rt>あたら</rt><rp>)</rp></ruby>しい<ruby>創造<rp>(</rp><rt>そうぞう</rt><rp>)</rp></ruby><ruby>物<rp>(</rp><rt>もの</rt><rp>)</rp></ruby>を<ruby>探<rp>(</rp><rt>さが</rt><rp>)</rp></ruby>していました。<br>プログラミングの<ruby>難易度<rp>(</rp><rt>なんいど</rt><rp>)</rp></ruby>など<ruby>気<rp>(</rp><rt>き</rt><rp>)</rp></ruby>にせず、バグを<ruby>退治<rp>(</rp><rt>たいじ</rt><rp>)</rp></ruby>することに<ruby>喜<rp>(</rp><rt>よろこ</rt><rp>)</rp></ruby>びを<ruby>感<rp>(</rp><rt>かん</rt><rp>)</rp></ruby>じていた。<br><ruby>彼<rp>(</rp><rt>かれ</rt><rp>)</rp></ruby>の<ruby>身軽<rp>(</rp><rt>みがる</rt><rp>)</rp></ruby>な<ruby>指<rp>(</rp><rt>ゆび</rt><rp>)</rp></ruby>で、<ruby>様々<rp>(</rp><rt>さまざま</rt><rp>)</rp></ruby>なタイプのウェブアプリケーションが<ruby>形作<rp>(</rp><rt>かたちづく</rt><rp>)</rp></ruby>られていった。",
+        "p2": "ウェブアプリケーションの<ruby>作成<rp>(</rp><rt>さくせい</rt><rp>)</rp></ruby>で<ruby>他人<rp>(</rp><rt>たにん</rt><rp>)</rp></ruby>のために<ruby>働<rp>(</rp><rt>はたら</rt><rp>)</rp></ruby>くことができた。<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>に<ruby>至<rp>(</rp><rt>いた</rt><rp>)</rp></ruby>るまで、<ruby>自分<rp>(</rp><rt>じぶん</rt><rp>)</rp></ruby>の<ruby>仕事<rp>(</rp><rt>しごと</rt><rp>)</rp></ruby>を<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>に<ruby>教<rp>(</rp><rt>おし</rt><rp>)</rp></ruby>えているが。その<ruby>知識<rp>(</rp><rt>ちしき</rt><rp>)</rp></ruby>を、<ruby>学<rp>(</rp><rt>まな</rt><rp>)</rp></ruby>びたい<ruby>未来<rp>(</rp><rt>みらい</rt><rp>)</rp></ruby>のプログラマーたちに<ruby>日々<rp>(</rp><rt>ひび</rt><rp>)</rp></ruby><ruby>伝<rp>(</rp><rt>つた</rt><rp>)</rp></ruby>えている。",
+        "p3": "<ruby>好奇心旺盛<rp>(</rp><rt>こうきしんおうせい</rt><rp>)</rp></ruby>な<ruby>趣味<rp>(</rp><rt>しゅみ</rt><rp>)</rp></ruby>は、<ruby>音楽<rp>(</rp><rt>おんがく</rt><rp>)</rp></ruby>、<ruby>読書<rp>(</rp><rt>どくしょ</rt><rp>)</rp></ruby>、<ruby>盤上遊戯<rp>(</rp><rt>ばんじょうゆうぎ</rt><rp>)</rp></ruby>やビデオゲーム、<ruby>科学<rp>(</rp><rt>かがく</rt><rp>)</rp></ruby>や<ruby>歴史<rp>(</rp><rt>れきし</rt><rp>)</rp></ruby>、あるいは<ruby>芸術<rp>(</rp><rt>げいじゅつ</rt><rp>)</rp></ruby>や<ruby>手細工<rp>(</rp><rt>てざいく</rt><rp>)</rp></ruby>など、<ruby>多岐<rp>(</rp><rt>たき</rt><rp>)</rp></ruby>にわたった。いつも<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>が<ruby>短<rp>(</rp><rt>みじか</rt><rp>)</rp></ruby>いと<ruby>思<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>っていた。"
     },
     "skillsPage":
     {
@@ -35,6 +37,27 @@
             "symfony": "<h3>Symfony</h3> <p>TODO</p>"
         }
     },
+    "associationsPage":
+    {
+        "title": "Chapitre 3 : Associations",
+        "p1": "Protagoniste de sa propre histoire, le développeur avait besoin parfois d'apparaître dans d'autres récits. <br> Il prit alors la décision de s'impliquer plus amplement dans la vie de deux associations qu'il fréquentait.",
+        "t2": "Japon et Culture",
+        "p2": "Cette association spécialisé dans l'enseignement de la langue japonaise et le partage de la culture de ce pays recherchait du soutien pour l'administration. Doué avec les chiffres, il entra au service de l'association en tant que vice trésorier.",
+        "t3": "Les Irrécupérables du Jeu de Rôle",
+        "p3": "Le président de cette association organisant soirées jeu de rôle, journées de Grandeur Nature et festivals entre autres choses se retrouvait souvent surchargé de travail. Le développeur se proposa comme bras droit pour le soutenir, en 2023 où il laissa la place à quelqu'un de vraiment intéressé par le rôle de vice président.<br> Il reste cependant chargé des relations et du placement des exposants lors des festivals."
+    },
+    "gamesPage":
+    {
+        "title": "Chapitre 4 : Jeux",
+        "p1": "Petites créations ludiques développées par ses soins :",
+        "games":
+        {
+            "labyrinth": "Le Labyrinthe",
+            "ticTacToe": "Le tic tac toe",
+            "fillLine": "Remplir les cases",
+            "priceIsRight": "Le juste prix"
+        }
+    },
     "not-found":
     {
         "message": "<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>はそのページを<ruby>吹<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>き<ruby>飛<rp>(</rp><rt>と</rt><rp>)</rp></ruby>ばした… <span class='vertical'>404</span>"
@@ -43,7 +66,7 @@
     {
         "merci":
         {
-            "intro": "Bienvenue sur cette page, elle ne vous apprendra rien à mon sujet ou mes compétences. <br> Ici se trouve mes remerciements aux gens qui ont croisés plus ou moins longtemps mon chemin et qui l'on malheureusement définitivement quitté.",
+            "intro": "Bienvenue sur cette page, elle ne vous apprendra rien à mon sujet ou mes compétences. <br> Ici se trouve mes remerciements aux gens qui ont croisés plus ou moins longtemps mon chemin et qui l'ont malheureusement définitivement quitté.",
             "g-mere": "Ma grand mère, Roseline FARGUES qui jouait avec moi pendant mon enfance.",
             "g-pere": "Mon grand père, Paul MARQUISET qui m'accueillait à ses côtés et dont j'aurais aimé connaître l'histoire.",
             "pere": "Mon père, Pierre-Yves MARQUISET qui m'a apprit nombres de choses durant ma vie et qui prenait le temps de s'intéresser à mes loisirs.",

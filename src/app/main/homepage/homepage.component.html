@@ -1,14 +1,15 @@
 <div class="page">
     <h2 [innerHTML]="'homePage.title' | translate"></h2>
-    <p>
-        <span [innerHTML]="'homePage.p1' | translate"></span>
-    </p>
-    <img src="/assets/img/gif-placeholder.gif" alt="gif du Développeur" decoding="async" loading="lazy" class="img-p">
-    <p>
-        <span [innerHTML]="'homePage.p2' | translate"></span>
-    </p>
-    <p>
-        <span [innerHTML]="'homePage.p3' | translate"></span>
-
-    </p>
+    <div class="translate">
+        <p class="">
+            <span [innerHTML]="'homePage.p1' | translate"></span>
+        </p>
+        <img src="/assets/img/gif-placeholder.gif" alt="gif du Développeur" decoding="async" loading="lazy" class="img-p">
+        <p>
+            <span [innerHTML]="'homePage.p2' | translate"></span>
+        </p>
+        <p>
+            <span [innerHTML]="'homePage.p3' | translate"></span>
+        </p>
+    </div>
 </div>

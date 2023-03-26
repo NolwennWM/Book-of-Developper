@@ -15,7 +15,7 @@
         "title": "Chapitre 1 : Introduction",
         "p1": "Il était une fois un développeur à la recherche de nouvelles créations à faire naître de ses mains.<br>Peu lui importait la difficulté de ce qu'il devait programmer, il prenait grand plaisir à pourfendre les bugs.<br>Sous ses doigts agiles prenaient forme toute sorte d'application web.",
         "p2": "Il avait pu travailler pour d'autres dans la création d'application web. Bien qu'à ce jour il enseigne son métier à d'autres. Transmettant son savoir jour après jour à de futurs développeurs en soif d'apprendre.",
-        "p3": "Sa curiosité rendait ses loisirs divers et varier, musique, lecture, jeux vidéos ou de sociétés, science et histoire ou encore artisanat, il trouvait toujours le temps trop court."
+        "p3": "Sa curiosité rendait ses loisirs divers et varier, musique, lecture, jeux vidéos ou de sociétés, science et histoire ou encore artisanat; il trouvait toujours le temps trop court."
     },
     "skillsPage":
     {
@@ -44,7 +44,7 @@
         "t2": "Japon et Culture",
         "p2": "Cette association spécialisé dans l'enseignement de la langue japonaise et le partage de la culture de ce pays recherchait du soutien pour l'administration. Doué avec les chiffres, il entra au service de l'association en tant que vice trésorier.",
         "t3": "Les Irrécupérables du Jeu de Rôle",
-        "p3": "Le président de cette association organisant soirées jeu de rôle, journées de Grandeur Nature et festivals entre autres choses se retrouvait souvent surchargé de travail. Le développeur se proposa comme bras droit pour le soutenir, en 2023 où il laissa la place à quelqu'un de vraiment intéressé par le rôle de vice président.<br> Il reste cependant chargé des relations et du placement des exposants lors des festivals."
+        "p3": "Le président de cette association organisant soirées jeu de rôle, journées de Grandeur Nature et festivals entre autres choses se retrouvait souvent surchargé de travail. Le développeur se proposa comme bras droit pour le soutenir. Cela jusqu'en 2023 où il laissa la place à quelqu'un de vraiment intéressé par le rôle de vice président.<br> Il reste cependant chargé des relations et du placement des exposants lors des festivals."
     },
     "gamesPage":
     {
@@ -53,7 +53,7 @@
         "games":
         {
             "labyrinth": "Le Labyrinthe",
-            "ticTacToe": "Le tic tac toe",
+            "ticTacToe": "Le tic-tac-toe",
             "fillLine": "Remplir les cases",
             "priceIsRight": "Le juste prix"
         }
@@ -66,7 +66,7 @@
     {
         "merci":
         {
-            "intro": "Bienvenue sur cette page, elle ne vous apprendra rien à mon sujet ou mes compétences. <br> Ici se trouve mes remerciements aux gens qui ont croisés plus ou moins longtemps mon chemin et qui l'on malheureusement définitivement quitté.",
+            "intro": "Bienvenue sur cette page, elle ne vous apprendra rien à mon sujet ou mes compétences. <br> Ici se trouve mes remerciements aux gens qui ont croisés plus ou moins longtemps mon chemin et qui l'ont malheureusement définitivement quitté.",
             "g-mere": "Ma grand mère, Roseline FARGUES qui jouait avec moi pendant mon enfance.",
             "g-pere": "Mon grand père, Paul MARQUISET qui m'accueillait à ses côtés et dont j'aurais aimé connaître l'histoire.",
             "pere": "Mon père, Pierre-Yves MARQUISET qui m'a apprit nombres de choses durant ma vie et qui prenait le temps de s'intéresser à mes loisirs.",

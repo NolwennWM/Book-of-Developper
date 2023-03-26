@@ -13,26 +13,49 @@
     "homePage":
     {
         "title": "Chapter 1 : Introduction",
-        "p1": "Il était une fois un développeur à la recherche de nouvelles créations à faire naître de ses mains.<br>Peu lui importait la difficulté de ce qu'il devait programmer, il prenait grand plaisir à pourfendre les bugs.<br>Sous ses doigts agiles prenaient forme toute sorte d'application web. "
+        "p1":"Once upon a time, a developer searching some new creations to be born from his hands.<br> He didn't care about the difficulty of whatever he have to program, he found lot of pleasure in slaying bugs.<br>Under his nimble fingers took shape many type of web applications.",
+        "p2": "He could work for others in the creation of web application. Although to this day, he teach his job to others. Passing on his knowledges day after day to futur developers eager to learn.",
+        "p3": "His curiosity made his hobbies diverse and varied, music, reading, board or video games, science and history or even arts and crafts; he always thought the time was too short."
     },
     "skillsPage":
     {
-        "title": "Chapitre 2 : Compétences",
-        "p1": "Ce développeur avec enthousiasme apprenait à se servir de nouveaux outils. <br> Mais il savait que multiplier les outils sans fin n'avait que peu de sens. Il prenait donc grand soin de perfectionner et améliorer ses bon vieux outils.",
-        "p2": "Il avait déjà de nombreuses cordes à son arc, entre autres choses, on pouvait citer :",
+        "title": "Chapter 2 : Skills",
+        "p1": "This developer enthusiastically learned to use new tools. <br> But he knew that multiplying endless tools made little sens. He therefor took great care to perfect and improve his good old tools.",
+        "p2": "He already had many strings to his bow, among another things, we could quote :",
         "skills":
         {
-            "default": "<h3>Compétences</h3> <p>Je vous prie de bien vouloir sélectionner une des compétences qui nous entoures.</p> ",
-            "html": "<h3>HTML&nbsp;5</h3> <p>Base de toute application web, HTML cache derrière son apparente simplicité, une multitude de petits secrets. Sémantique et Accessibilité sont les maîtres mots de son HTML.</p>",
-            "css": "<h3>CSS&nbsp;3</h3> <p>Si les mystères de l'art du design sont encore à atteindre, la reproduction de toute maquette est un défi à sa hauteur.</p>",
-            "sass": "<h3>SASS&nbsp;-&nbsp;SCSS</h3> <p>Quand il découvrit SASS, le développeur compris qu'il pourrait se servir de cet outil pour gagner en temps et efficacité lors de ses aventures colorés.</p>",
-            "js": "<h3>Javascript</h3> <p>TODO</p>",
-            "jquery": "<h3>JQuery</h3> <p>TODO</p>",
-            "ts": "<h3>Typescript</h3> <p>TODO</p>",
-            "angular": "<h3>Angular</h3> <p>TODO</p>",
-            "mysql": "<h3>MySQL</h3> <p>TODO</p>",
-            "php": "<h3>PHP</h3> <p>TODO</p>",
-            "symfony": "<h3>Symfony</h3> <p>TODO</p>"
+            "default": "<h3>Skills</h3> <p>If it please you, select one of the skills around us.</p> ",
+            "html": "<h3>HTML&nbsp;5</h3> <p>Basis of any web application, HTML hides behind its apparent simplicity, a multitude of little secrets. Semantics and Accessibility are the key words of his HTML.</p>",
+            "css": "<h3>CSS&nbsp;3</h3> <p>If the mysteries of the art of design are yet to be reached, the reproduction of any model is a challenge at its height.</p>",
+            "sass": "<h3>SASS&nbsp;-&nbsp;SCSS</h3> <p>When he discovered SASS, the developer understood that he could use this tool to save time and efficiency during his colorful adventures.</p>",
+            "js": "<h3>Javascript</h3> <p>Although he enjoys HTML and CSS, what he enjoys most is immersing himself in algorithms, and the freedom that javascript offers allows him to work with these in many ways.</p>",
+            "jquery": "<h3>JQuery</h3> <p>This love of youth was never forgotten although nowadays it rarely comes back to meet it.</p>",
+            "ts": "<h3>Typescript</h3> <p>Wishing to professionalize his way of working on algorithms, but the net languages not allowing it, he turned to typescript for a more strict javascript.</p>",
+            "angular": "<h3>Angular</h3> <p>Among the sea of frameworks available for javascript, his choice turned to angular because he appreciated more than anything else projects well organized in easy to read objects.</p>",
+            "mysql": "<h3>MySQL</h3> <p>This great classic with its many possibilities is just as effective for simple data as it is for complex associations, it always seemed to him to be more meaningful than the many other possibilities.</p>",
+            "php": "<h3>PHP</h3> <p>He never lost confidence in this ancestor of servers, so often disparaged. He followed its evolution over the years, witnessing its many corrections, making it an ever-modern language.</p>",
+            "symfony": "<h3>Symfony</h3> <p>Creating a solid back end was very simple but often very repetitive, so he fell in love with Symfony allowing him to shorten the most redundant moments to focus on the core of his web applications.</p>"
+        }
+    },
+    "associationsPage":
+    {
+        "title": "Chapter 3 : Associations",
+        "p1": "As the protagonist of his own story, the developer sometimes needed to appear in other stories. <br> He then decided to become more involved in the life of two associations he frequented.",
+        "t2": "<span title='Japan and Culture'>Japon et Culture</span>",
+        "p2": "Cette association spécialisé dans l'enseignement de la langue japonaise et le partage de la culture de ce pays recherchait du soutien pour l'administration. Doué avec les chiffres, il entra au service de l'association en tant que vice trésorier.",
+        "t3": "<span title='The unrecoverable of Role-playing'>Les Irrécupérables du Jeu de Rôle</span>",
+        "p3": "The president of this association, which organises role-playing evenings, Live action role-playing days and festivals, among other things, often found himself overloaded with work.. The developer offered to be his right-hand man to support him. This lasted until 2023 when he gave way to someone who was really interested in the role of vice president.<br> However, he is still responsible for relations and placement of exhibitors at festivals."
+    },
+    "gamesPage":
+    {
+        "title": "Chapter 4 : Games",
+        "p1": "Small playful creations developed by him:",
+        "games":
+        {
+            "labyrinth": "The Labyrinth",
+            "ticTacToe": "The tic-tac-toe",
+            "fillLine": "Fill in the boxes",
+            "priceIsRight": "The Price is Right"
         }
     },
     "not-found":
@@ -43,14 +66,14 @@
     {
         "merci":
         {
-            "intro": "Bienvenue sur cette page, elle ne vous apprendra rien à mon sujet ou mes compétences. <br> Ici se trouve mes remerciements aux gens qui ont croisés plus ou moins longtemps mon chemin et qui l'on malheureusement définitivement quitté.",
-            "g-mere": "Ma grand mère, Roseline FARGUES qui jouait avec moi pendant mon enfance.",
-            "g-pere": "Mon grand père, Paul MARQUISET qui m'accueillait à ses côtés et dont j'aurais aimé connaître l'histoire.",
-            "pere": "Mon père, Pierre-Yves MARQUISET qui m'a apprit nombres de choses durant ma vie et qui prenait le temps de s'intéresser à mes loisirs.",
-            "oncle": "Mon oncle, Johnatan TROTIGNON qui m'a fait découvrir le développement et sans qui je ne serais pas là aujourd’hui.",
+            "intro": "Welcome to this page, it will not tell you anything about me or my skills. <br> Here are my thanks to the people who have crossed my path for more or less a long time and who have unfortunately left it for good.",
+            "g-mere": "My grandmother, Roseline FARGUES who played with me as a child.",
+            "g-pere": "My grandfather, Paul MARQUISET, who welcomed me at his side and whose story I would have liked to know.",
+            "pere": "My father, Pierre-Yves MARQUISET, who taught me many things during my life and who took the time to take an interest in my hobbies.",
+            "oncle": "My uncle, Johnatan TROTIGNON, who introduced me to development and without whom I would not be here today.",
             "amis": 
             {
-                "monique": "Monique MARECAUX toujours rayonnante dans les activités de l'association."
+                "monique": "Monique MARECAUX always radiant in the activities of the association."
             }
         }
     }

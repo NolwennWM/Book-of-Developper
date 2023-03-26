@@ -15,10 +15,10 @@
             <nav>
                 <div class="navigation" (click)="toggleBook(true)">
                     <a routerLink="/summary" routerLinkActive="active" class="burger">☰</a>
-                    <a routerLink="/home" routerLinkActive="active">{{ "app.nav.homeLink" | translate }}</a>
-                    <a routerLink="/skills" routerLinkActive="active">{{ "app.nav.skillsLink" | translate }}</a>
-                    <a routerLink="/associations" routerLinkActive="active">{{ "app.nav.associationsLink" | translate }}</a>
-                    <a routerLink="/jeux/selection" routerLinkActive="active">{{ "app.nav.gameLink" | translate }}</a> 
+                    <a routerLink="/home" routerLinkActive="active" [innerHTML]="'app.nav.homeLink' | translate"></a>
+                    <a routerLink="/skills" routerLinkActive="active" [innerHTML]="'app.nav.skillsLink' | translate"></a>
+                    <a routerLink="/associations" routerLinkActive="active" [innerHTML]="'app.nav.associationsLink' | translate"></a>
+                    <a routerLink="/jeux/selection" routerLinkActive="active" [innerHTML]="'app.nav.gameLink' | translate"></a> 
                 </div>
                 <!-- TODO régler une taille fixe pour chaque lien -->
             </nav>
