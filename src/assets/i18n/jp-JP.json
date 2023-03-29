@@ -19,8 +19,8 @@
     },
     "skillsPage":
     {
-        "title": "Chapitre 2 : Compétences",
-        "p1": "Ce développeur avec enthousiasme apprenait à se servir de nouveaux outils. <br> Mais il savait que multiplier les outils sans fin n'avait que peu de sens. Il prenait donc grand soin de perfectionner et améliorer ses bon vieux outils.",
+        "title": "<ruby>章句<rp>(</rp><rt>しょうく</rt><rp>)</rp></ruby> 2 : <ruby>能力<rp>(</rp><rt>のうりょく</rt><rp>)</rp></ruby>",
+        "p1": "このプログラマーは、<ruby>新<rp>(</rp><rt>あたら</rt><rp>)</rp></ruby>しい<ruby>道具<rp>(</rp><rt>どうぐ</rt><rp>)</rp></ruby>の<ruby>使<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>い<ruby>方<rp>(</rp><rt>かた</rt><rp>)</rp></ruby>を<ruby>熱心<rp>(</rp><rt>ねっしん</rt><rp>)</rp></ruby>に<ruby>学<rp>(</rp><rt>まな</rt><rp>)</rp></ruby>びました。<br>しかし、<ruby>無限<rp>(</rp><rt>むげん</rt><rp>)</rp></ruby>に<ruby>道具<rp>(</rp><rt>どうぐ</rt><rp>)</rp></ruby>を<ruby>増<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>やしても、ほとんど<ruby>意味<rp>(</rp><rt>いみ</rt><rp>)</rp></ruby>がないことを<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>っていた。そのため、<ruby>古<rp>(</rp><rt>ふる</rt><rp>)</rp></ruby>くから、<ruby>自分<rp>(</rp><rt>じぶん</rt><rp>)</rp></ruby>の<ruby>道具<rp>(</rp><rt>どうぐ</rt><rp>)</rp></ruby>を<ruby>完璧<rp>(</rp><rt>かんぺき</rt><rp>)</rp></ruby>なものにするために、<ruby>細心<rp>(</rp><rt>細心</rt><rp>)</rp></ruby>の<ruby>注意<rp>(</rp><rt>ちゅうい</rt><rp>)</rp></ruby>を<ruby><rp>(</rp><rt>はら</rt><rp>)</rp></ruby>った。",
         "p2": "Il avait déjà de nombreuses cordes à son arc, entre autres choses, on pouvait citer :",
         "skills":
         {
@@ -39,7 +39,7 @@
     },
     "associationsPage":
     {
-        "title": "Chapitre 3 : Associations",
+        "title": "<ruby>章句<rp>(</rp><rt>しょうく</rt><rp>)</rp></ruby> 3 : <ruby>協会<rp>(</rp><rt>きょうかい</rt><rp>)</rp></ruby>",
         "p1": "Protagoniste de sa propre histoire, le développeur avait besoin parfois d'apparaître dans d'autres récits. <br> Il prit alors la décision de s'impliquer plus amplement dans la vie de deux associations qu'il fréquentait.",
         "t2": "Japon et Culture",
         "p2": "Cette association spécialisé dans l'enseignement de la langue japonaise et le partage de la culture de ce pays recherchait du soutien pour l'administration. Doué avec les chiffres, il entra au service de l'association en tant que vice trésorier.",
@@ -48,7 +48,7 @@
     },
     "gamesPage":
     {
-        "title": "Chapitre 4 : Jeux",
+        "title": "<ruby>章句<rp>(</rp><rt>しょうく</rt><rp>)</rp></ruby> 4 : ゲーム",
         "p1": "Petites créations ludiques développées par ses soins :",
         "games":
         {
