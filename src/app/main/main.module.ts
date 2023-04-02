@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { AssociationsComponent } from './associations/associations.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ScrollDirective } from './scroll.directive';
 
 const mainRoutes: Routes = [
   {path: "home", component: HomepageComponent, data: { animation: 'HomePage' }},
@@ -19,7 +20,8 @@ const mainRoutes: Routes = [
   declarations: [
     HomepageComponent,
     AssociationsComponent,
-    SkillsComponent
+    SkillsComponent,
+    ScrollDirective
   ],
   imports: [
     CommonModule,

@@ -14,7 +14,6 @@ body
         overflow-y: auto;
         max-height: 100%;
         padding: 0 10px 0 5px;
-        // TODO: changer design scrollbar
         &, .translate
         {
             scrollbar-gutter: stable;
@@ -67,7 +66,7 @@ body
     {   
         // height: 50%;
         width: 100%;
-        text-align: end;
+        // text-align: end;
         writing-mode: vertical-rl;
         font-size: 1.2em;
         overflow-x: auto;

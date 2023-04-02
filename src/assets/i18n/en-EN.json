@@ -26,7 +26,7 @@
         {
             "default": "<h3>Skills</h3> <p>If it please you, select one of the skills around us.</p> ",
             "html": "<h3>HTML&nbsp;5</h3> <p>Basis of any web application, HTML hides behind its apparent simplicity, a multitude of little secrets. Semantics and Accessibility are the key words of his HTML.</p>",
-            "css": "<h3>CSS&nbsp;3</h3> <p>If the mysteries of the art of design are yet to be reached, the reproduction of any model is a challenge at its height.</p>",
+            "css": "<h3>CSS&nbsp;3</h3> <p>If the mysteries of the art of design are yet to be reached, the reproduction of any wireframe is a challenge at its height.</p>",
             "sass": "<h3>SASS&nbsp;-&nbsp;SCSS</h3> <p>When he discovered SASS, the developer understood that he could use this tool to save time and efficiency during his colorful adventures.</p>",
             "js": "<h3>Javascript</h3> <p>Although he enjoys HTML and CSS, what he enjoys most is immersing himself in algorithms, and the freedom that javascript offers allows him to work with these in many ways.</p>",
             "jquery": "<h3>JQuery</h3> <p>This love of youth was never forgotten although nowadays it rarely comes back to meet it.</p>",
@@ -42,9 +42,9 @@
         "title": "Chapter 3 : Associations",
         "p1": "As the protagonist of his own story, the developer sometimes needed to appear in other stories. <br> He then decided to become more involved in the life of two associations he frequented.",
         "t2": "<span title='Japan and Culture'>Japon et Culture</span>",
-        "p2": "Cette association spécialisé dans l'enseignement de la langue japonaise et le partage de la culture de ce pays recherchait du soutien pour l'administration. Doué avec les chiffres, il entra au service de l'association en tant que vice trésorier.",
+        "p2": "This association, which specialises in teaching the Japanese language and sharing the culture of that country, was looking for administrative support. With a talent for numbers, he joined the association as vice treasurer.",
         "t3": "<span title='The unrecoverable of Role-playing'>Les Irrécupérables du Jeu de Rôle</span>",
-        "p3": "The president of this association, which organises role-playing evenings, Live action role-playing days and festivals, among other things, often found himself overloaded with work.. The developer offered to be his right-hand man to support him. This lasted until 2023 when he gave way to someone who was really interested in the role of vice president.<br> However, he is still responsible for relations and placement of exhibitors at festivals."
+        "p3": "The president of this association, which organises role-playing evenings, Live action role-playing days and festivals, among other things, often found himself overloaded with work. The developer offered to be his right-hand man to support him. This lasted until 2023 when he gave way to someone who was really interested in the role of vice president.<br> However, he is still responsible for relations and placement of exhibitors at festivals."
     },
     "gamesPage":
     {

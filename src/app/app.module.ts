@@ -13,6 +13,7 @@ import { NotFoundComponent } from './tools/not-found/not-found.component';
 import { SecretModule } from './secret/secret.module';
 import { LanguageModalComponent } from './tools/language-modal/language-modal.component';
 import { SummaryComponent } from './tools/summary/summary.component';
+// import { ScrollDirective } from './scroll.directive';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "/assets/i18n/", ".json");
@@ -23,7 +24,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     NotFoundComponent,
     LanguageModalComponent,
-    SummaryComponent
+    SummaryComponent,
+    // ScrollDirective
   ],
   imports: [
     BrowserModule,

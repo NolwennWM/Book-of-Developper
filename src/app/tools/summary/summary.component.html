@@ -5,16 +5,16 @@
     <!-- TODO : Faire un bouton retour avec historique -->
     <ol>
         <li>
-            <a routerLink="/home" routerLinkActive="active">{{ "app.nav.homeLink" | translate }}</a>
+            <a routerLink="/home" routerLinkActive="active" [innerHTML]="'app.nav.homeLink' | translate"></a>
         </li>
         <li>
-            <a routerLink="/skills" routerLinkActive="active">{{ "app.nav.skillsLink" | translate }}</a>
+            <a routerLink="/skills" routerLinkActive="active" [innerHTML]="'app.nav.skillsLink' | translate"></a>
         </li>
         <li>
-            <a routerLink="/associations" routerLinkActive="active">{{ "app.nav.associationsLink" | translate }}</a>
+            <a routerLink="/associations" routerLinkActive="active" [innerHTML]="'app.nav.associationsLink' | translate"></a>
         </li>
         <li>
-            <a routerLink="/jeux/selection" routerLinkActive="active">{{ "app.nav.gameLink" | translate }}</a> 
+            <a routerLink="/jeux/selection" routerLinkActive="active" [innerHTML]="'app.nav.gameLink' | translate"></a> 
         </li>
     </ol>
 </div>

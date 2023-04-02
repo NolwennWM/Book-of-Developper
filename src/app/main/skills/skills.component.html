@@ -1,8 +1,10 @@
 <div class="page">
     <div class="presentation">
         <h2 [innerHTML]="'skillsPage.title' | translate"></h2>
-        <p><span [innerHTML]="'skillsPage.p1' | translate"></span></p>
-        <p><span [innerHTML]="'skillsPage.p2' | translate"></span></p>
+        <div class="content translate" appScroll>
+            <p><span [innerHTML]="'skillsPage.p1' | translate"></span></p>
+            <p><span [innerHTML]="'skillsPage.p2' | translate"></span></p>
+        </div>
     </div>
     <div class="animation-container">
         <div class="cercle" #skills (click)="selectSkill($event, skills)">
