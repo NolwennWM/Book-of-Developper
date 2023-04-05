@@ -20,7 +20,6 @@ $skills: 10;
             flex-direction: column;
             .content
             {
-                // height: 50%;
             }
         }
         .animation-container
@@ -142,6 +141,7 @@ $skills: 10;
                 {
                     width: 100%;
                     height: 100%;
+                    text-align: start;
                 }
                 .detailEnter, .detailLeave
                 {

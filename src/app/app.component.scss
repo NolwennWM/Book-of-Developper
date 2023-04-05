@@ -4,10 +4,11 @@ $coverImage : url(/assets/textures/leather.png);
 .body
 {
     height: 100vh;
-    padding-top: 50px;
+    padding-top: 25px;
+    @include flex(center, flex-end);
     @include media("tablet")
     {
-        @include flex(center, center);
+        align-items: center;
     }
     @include media("desktop")
     {
