@@ -1,4 +1,4 @@
-# Webmar
+# Book of Developper
 
 I choosed to make my portfolio with angular because I needed something very dynamic for this idea.
 Made like a book, it bring my profil as a story.
