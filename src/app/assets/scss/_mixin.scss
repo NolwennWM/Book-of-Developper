@@ -4,7 +4,7 @@ $breakpoints : (
 );
 @mixin page($reverse:false)
 {
-    background-image: url(/assets/textures/natural-paper.png);
+    background-image: url("^./assets/textures/natural-paper.png");
     background-color: #e0c9a6;
     height: 97%;
     width: 98%;

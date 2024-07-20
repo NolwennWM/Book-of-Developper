@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref" : "/book/",
             "outputPath": "dist/webmar",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -102,6 +103,13 @@
             "scripts": []
           }
         }
+      }
+    }
+  },
+  "schematics": {
+    "@schematics/angular": {
+      "component": {
+        "spec": false
       }
     }
   },

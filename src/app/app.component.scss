@@ -1,6 +1,6 @@
 @import "/src/app/assets/scss/mixin", "/src/app/assets/scss/languages";
 
-$coverImage : url(/assets/textures/leather.png);
+$coverImage : url("^./assets/textures/leather.png");
 .body
 {
     height: 100vh;

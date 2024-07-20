@@ -22,6 +22,7 @@ body
     overflow: hidden;
     .page
     {
+        font-size: clamp(1em, 3vw, 2em);
         overflow-x: hidden;
         overflow-y: auto;
         max-height: 100%;
