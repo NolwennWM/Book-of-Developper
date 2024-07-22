@@ -6,6 +6,7 @@
         {
             "homeLink": "Accueil",
             "gameLink": "Jeux",
+            "projectsLink": "Projets",
             "skillsLink": "Compétences",
             "associationsLink": "Associations"
         }
@@ -17,9 +18,33 @@
         "p2": "Il avait pu travailler pour d'autres dans la création d'application web. Bien qu'à ce jour il enseigne son métier à d'autres. Transmettant son savoir jour après jour à de futurs développeurs en soif d'apprendre.",
         "p3": "Sa curiosité rendait ses loisirs divers et varier, musique, lecture, jeux vidéos ou de sociétés, science et histoire ou encore artisanat; il trouvait toujours le temps trop court."
     },
+    "projectsPage":
+    {
+        "title": "Chapitre 2 : Projets",
+        "devtool": {
+            "title": "Outils pour Développeur",
+            "p1": "Ce site regroupe des outils utiles au développement front-end."
+        },
+        "portfolio": {
+            "title": "Les dés d'un Développeur",
+            "p1": "Une autre version de mon portfolio. Celle ci est sous forme de dés à lancer."
+        },
+        "leffetlune": {
+            "title": "L'Effet Lune",
+            "p1": "Site fait sous wordpress avec WooCommerce. Le thème est fait depuis zero sans outils nocode. <br> Seul le thème est disponible sur github."
+        },
+        "multistream": {
+            "title": "Aeiou Stream",
+            "p1": "Site regroupant plusieurs lecteur video pour du streaming. <br> Les lecteurs sont ceux du github de <a href=\"https://github.com/AirenSoft/OvenPlayer\" target=\"_blank\">OvenPlayer</a>. <br> Seul l'interface multistream est de mon oeuvre. <br> Le projet étant fait pour être utilisé entre amis, le site ne sera pas révélé."
+        },
+        "galery": {
+            "title": "Galerie Photo",
+            "p1": "Galerie photo de mes voyages. <br> Car il faut savoir parfois ne pas réinventer la roue, ce site est fait avec le CMS Piwigo."
+        }
+    },
     "skillsPage":
     {
-        "title": "Chapitre 2 : Compétences",
+        "title": "Chapitre 3 : Compétences",
         "p1": "Ce développeur avec enthousiasme apprenait à se servir de nouveaux outils. <br> Mais il savait que multiplier les outils sans fin n'avait que peu de sens. Il prenait donc grand soin de perfectionner et améliorer ses bon vieux outils.",
         "p2": "Il avait déjà de nombreuses cordes à son arc, entre autres choses, on pouvait citer :",
         "skills":
@@ -39,16 +64,16 @@
     },
     "associationsPage":
     {
-        "title": "Chapitre 3 : Associations",
+        "title": "Chapitre 4 : Associations",
         "p1": "Protagoniste de sa propre histoire, le développeur avait besoin parfois d'apparaître dans d'autres récits. <br> Il prit alors la décision de s'impliquer plus amplement dans la vie de deux associations qu'il fréquentait.",
         "t2": "Japon et Culture",
         "p2": "Cette association spécialisé dans l'enseignement de la langue japonaise et le partage de la culture de ce pays recherchait du soutien pour l'administration. Doué avec les chiffres, il entra au service de l'association en tant que vice trésorier.",
         "t3": "Les Irrécupérables du Jeu de Rôle",
-        "p3": "Le président de cette association organisant soirées jeu de rôle, journées de Grandeur Nature et festivals entre autres choses se retrouvait souvent surchargé de travail. Le développeur se proposa comme bras droit pour le soutenir. Cela jusqu'en 2023 où il laissa la place à quelqu'un de vraiment intéressé par le rôle de vice président.<br> Il reste cependant chargé des relations et du placement des exposants lors des festivals."
+        "p3": "Le président de cette association organisant soirées jeu de rôle, journées de Grandeur Nature et festivals entre autres choses se retrouvait souvent surchargé de travail. Le développeur se proposa comme bras droit pour le soutenir. Cela jusqu'en 2023 où il laissa la place à quelqu'un de vraiment intéressé par le rôle de vice président.<br> Il reste cependant chargé des relations et du placement des exposants lors des festivals. <br> Il quitta ce poste en 2024 afin de se concentrer sur ses projets professionnels."
     },
     "gamesPage":
     {
-        "title": "Chapitre 4 : Jeux",
+        "title": "Chapitre 5 : Jeux",
         "p1": "Petites créations ludiques développées par ses soins :",
         "games":
         {

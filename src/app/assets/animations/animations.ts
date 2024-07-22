@@ -43,6 +43,7 @@ const pages: string[] = [
     "ThanksPage",
     "SummaryPage",
     "HomePage",
+    "ProjectsPage",
     "SkillsPage",
     "AssociationsPage",
     "GamesPage",
